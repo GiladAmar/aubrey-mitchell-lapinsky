@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aubrey Mitchell Lapinsky</title>
+<meta name="description" content="The Second World War service of Cpl Aubrey Mitchell Lapinsky, South African Medical Corps, 1940–1945: his file, his journey and his medals.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+/* Layout: a dossier. One narrow reading column; the journey chapter pins a globe beside the scrolling stops. */
+:root{
+  --paper:#efe7d3; --card:#f7f1e3; --card-2:#e6dcc3;
+  --ink:#2b2620; --ink-2:#605850; --ink-3:#8a8172;
+  --rule:#7f97bd; --stamp:#5a3f9c; --red:#b3302a;
+  --sea:#1f6e9e; --road:#8f6a0e; --air:#5b3fa0;
+  --map-land:#e1d5b4; --map-border:#c6b791; --map-grat:rgba(127,151,189,.22);
+  --shadow:0 1px 2px rgba(43,38,32,.12), 0 12px 32px -12px rgba(43,38,32,.28);
+  --display:"Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --body:"Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --mono:"Courier Prime", "Courier New", Courier, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#1b1914; --card:#24211a; --card-2:#2d2a21;
+  --ink:#ece4d2; --ink-2:#b4aa96; --ink-3:#857a6a;
+  --rule:#6f86ab; --stamp:#b3a3ea; --red:#e3736a;
+  --sea:#4f95c9; --road:#a67f1c; --air:#8f7ad0;
+  --map-land:#2f2d24; --map-border:#4c4837; --map-grat:rgba(111,134,171,.18);
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -12px rgba(0,0,0,.7);
+  color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#1b1914; --card:#24211a; --card-2:#2d2a21;
+  --ink:#ece4d2; --ink-2:#b4aa96; --ink-3:#857a6a;
+  --rule:#6f86ab; --stamp:#b3a3ea; --red:#e3736a;
+  --sea:#4f95c9; --road:#a67f1c; --air:#8f7ad0;
+  --map-land:#2f2d24; --map-border:#4c4837; --map-grat:rgba(111,134,171,.18);
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -12px rgba(0,0,0,.7);
+  color-scheme:dark }
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;margin:0}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none!important;animation:none!important} }
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:0 64px;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--stamp);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:2px solid var(--stamp);outline-offset:3px;border-radius:2px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto}
+.measure{max-width:66ch}
+.eyebrow{font-family:var(--body);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+.rule{border:0;border-top:1px dotted var(--rule);margin:0;opacity:.75}
+.lede{font-size:21px;line-height:1.45;color:var(--ink);font-weight:400}
+.muted{color:var(--ink-2)}
+.small{font-size:14.5px}
+.rec{font-family:var(--mono);font-size:14px;line-height:1.45;color:var(--ink)}
+.stamp{display:inline-block;font-family:var(--body);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:11.5px;color:var(--stamp);border:1.5px solid var(--stamp);padding:1px 6px;border-radius:2px;transform:rotate(-1.5deg);opacity:.9}
+.red{color:var(--red)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-family:var(--body);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--ink-2);border:1px solid var(--card-2);background:var(--card);padding:3px 9px;border-radius:999px}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--stamp);display:inline-block}
+section{margin-block:96px}
+.sec-head{display:grid;gap:14px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(34px,4.6vw,52px);font-weight:300;letter-spacing:-.01em}
+.sec-head .lede{max-width:62ch}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:36px 0}
+.mast-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--card-2)}
+.mast-top .ref{font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:center;padding-block:56px 40px}
+.hero h1{font-size:clamp(44px,7.2vw,96px);font-weight:300;letter-spacing:-.025em;line-height:.98}
+.hero h1 em{font-style:italic;font-weight:300}
+.hero .sub{margin-top:26px;max-width:46ch}
+.hero .facts{margin-top:34px;display:grid;grid-template-columns:repeat(3,auto);gap:20px 36px;justify-content:start}
+.hero .facts div{display:grid;gap:3px}
+.hero .facts b{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.05;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.hero .facts span{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+.card-shot{position:relative;transform:rotate(-1.2deg);box-shadow:var(--shadow);border-radius:2px;overflow:hidden;background:var(--card)}
+.card-shot img{width:100%}
+.card-shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 14px;font-size:12.5px;color:#f3ecdc;background:linear-gradient(180deg,rgba(20,16,10,0),rgba(20,16,10,.72));font-family:var(--body)}
+.card-shot figcaption b{color:#fff;font-weight:600}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;padding-block:40px 8px;border-top:1px dotted var(--rule)}
+.intro p+p{margin-top:14px}
+.intro .how{background:var(--card);padding:22px 24px;border-radius:3px;border:1px solid var(--card-2);align-self:start}
+.intro .how h3{font-size:20px;margin-bottom:10px}
+.intro .how ul{margin:10px 0 0;padding-left:18px;font-size:15px;color:var(--ink-2)}
+.intro .how li+li{margin-top:5px}
+.keys{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.key{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--ink-2)}
+.key i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.key.k-rec i{background:var(--stamp)} .key.k-hist i{background:var(--ink-3)} .key.k-pub i{background:var(--road)} .key.k-inf i{background:transparent;border:1.5px dashed var(--ink-3)}
+
+/* ---------- hero media, regalia, letter ---------- */
+.hero-media{position:relative;padding-bottom:16%}
+.photo{width:68%;margin-left:auto;background:var(--card);padding:10px 10px 14px;box-shadow:var(--shadow);border-radius:2px;transform:rotate(1.1deg)}
+.photo img{width:100%;border-radius:1px}
+.photo figcaption{font-size:12.5px;color:var(--ink-2);padding:9px 0 0 36%;text-align:right;font-family:var(--body)}
+.hero-media .card-shot{position:absolute;left:0;bottom:0;width:60%;transform:rotate(-3deg);z-index:1}
+.regalia{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(0,1fr);gap:28px;margin-bottom:34px;align-items:end}
+.regalia figure{margin:0;display:grid;gap:8px}
+.regalia img{width:100%;border-radius:3px;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.regalia figcaption{font-size:13.5px;color:var(--ink-2)}
+.medal .mimg{aspect-ratio:3/7;border-radius:4px;overflow:hidden;background:#2a3d78;display:grid;place-items:center}
+.medal .mimg img{width:100%;height:100%;object-fit:cover}
+.medal .mimg.missing{background:transparent;border:2px dashed var(--ink-3);display:grid;grid-template-rows:1fr auto;place-items:center;padding:14px;gap:10px}
+.medal .mimg.missing svg{width:62%;height:auto}
+.medal .mimg.missing span{font-family:var(--body);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--red);border:1.5px solid var(--red);padding:3px 8px;border-radius:2px;transform:rotate(-3deg)}
+.slip{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px;margin-top:48px;padding-top:40px;border-top:1px dotted var(--rule);align-items:start}
+.slip figure{margin:0;box-shadow:var(--shadow);border-radius:2px;overflow:hidden;transform:rotate(-.6deg);background:var(--card)}
+.slip h3{font-size:24px;margin-bottom:10px}
+.slip p+p{margin-top:12px}
+.slip .q{border-left:2px solid var(--stamp);padding-left:14px;color:var(--ink-2);font-style:italic;margin:14px 0}
+.letter{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:start}
+.letter figure{margin:0;box-shadow:var(--shadow);border-radius:2px;overflow:hidden;transform:rotate(-.8deg);background:var(--card)}
+.letter figcaption{font-size:13px;color:var(--ink-2);padding:10px 14px;background:var(--card)}
+.letter .addr{font-family:var(--mono);font-size:15px;line-height:1.65;background:var(--card);border:1px solid var(--card-2);padding:18px 22px;border-radius:3px;margin-bottom:18px;
+  background-image:repeating-linear-gradient(180deg,transparent 0 23.75px,color-mix(in srgb,var(--rule) 28%,transparent) 23.75px 24.75px);background-origin:content-box}
+.letter .addr small{display:block;font-size:12.5px;color:var(--ink-3);margin-top:8px;font-family:var(--body)}
+.letter p+p{margin-top:12px}
+
+/* ---------- journey ---------- */
+.journey{position:relative}
+.jgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 48px;align-items:start}
+.mapwrap{position:sticky;top:0;padding-top:16px;z-index:2}
+.mapbox{position:relative;aspect-ratio:1/1;max-width:100%;width:100%;border-radius:50%;overflow:visible}
+.mapbox canvas{position:absolute;inset:0;width:100%;height:100%;display:block;border-radius:50%}
+.mapbox .ov{position:absolute;inset:0;pointer-events:none;overflow:hidden;border-radius:50%}
+.pin{position:absolute;left:0;top:0;width:32px;height:32px;margin:-16px 0 0 -16px;border-radius:50%;pointer-events:auto;display:grid;place-items:center;transition:opacity .25s}
+.pin i{width:10px;height:10px;border-radius:50%;background:var(--card);border:2.5px solid var(--stamp);display:block;transition:transform .3s, background .3s}
+.pin.active i{background:var(--stamp);transform:scale(1.5)}
+.pin.active::before{content:"";position:absolute;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--stamp);opacity:.55;animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.5);opacity:.8}100%{transform:scale(1.4);opacity:0}}
+.pin[hidden]{display:none}
+.lbl{position:absolute;left:0;top:0;transform:translate(12px,-50%);white-space:nowrap;font-family:var(--body);font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--ink);background:color-mix(in srgb,var(--paper) 82%,transparent);padding:2px 6px;border-radius:2px;pointer-events:none;transition:opacity .25s}
+.lbl.sub{font-weight:400;color:var(--ink-2)}
+.lbl.left{transform:translate(calc(-100% - 12px),-50%)}
+.lbl[hidden]{display:none}
+.maplegend{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;align-items:center;font-size:12.5px;color:var(--ink-2)}
+.maplegend span{display:inline-flex;align-items:center;gap:7px}
+.maplegend svg{width:28px;height:8px;overflow:visible}
+.maplegend .note{margin-left:auto;font-style:italic}
+.mapcap{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);margin-top:8px;min-height:1.4em}
+.tl{margin-top:10px}
+.tl svg{width:100%;height:auto;display:block;overflow:visible}
+.tl .axis{stroke:var(--ink-3);stroke-width:1}
+.tl .tick{stroke:var(--ink-3);stroke-width:1}
+.tl .yr{font-family:var(--mono);font-size:11px;fill:var(--ink-2)}
+.tl .span{stroke:var(--card-2);stroke-width:5;stroke-linecap:butt}
+.tl .span.on{stroke:var(--stamp)}
+.tl .pt{fill:var(--card);stroke:var(--stamp);stroke-width:2;cursor:pointer}
+.tl .pt.on{fill:var(--stamp)}
+.tl .pt:hover{stroke-width:3}
+.tl .brk{stroke:var(--ink-3);stroke-width:1.2}
+.tl .cap{font-family:var(--mono);font-size:11px;fill:var(--stamp);font-weight:700}
+.tl .ev{fill:var(--red);stroke:var(--red);stroke-width:1.2;cursor:default}
+.tl .ev.u{fill:var(--card)}
+.tl .ev:hover{opacity:.7}
+.tl .evcap{font-family:var(--mono);font-size:10.5px;fill:var(--red)}
+.tlkey{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin:2px 0 0;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}
+.tlkey svg{width:10px;height:8px;vertical-align:-1px;margin-right:5px;overflow:visible}
+.life .cols{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:start}
+@media (max-width:900px){.life .cols{grid-template-columns:1fr}}
+.life p{font-size:17px;line-height:1.6}
+.life p+p{margin-top:12px}
+.life h3{font-size:22px;margin:30px 0 10px}
+.life h3:first-child{margin-top:0}
+.life figure{margin:0 0 24px;display:grid;gap:8px}
+.life figure img{width:100%;height:auto;border-radius:2px;box-shadow:var(--shadow)}
+.life figcaption{font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.life figcaption small{display:block;color:var(--ink-3);font-size:11.5px;margin-top:2px}
+.sick{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:13px;margin:10px 0 6px}
+.sick caption{text-align:left;font-family:var(--body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--ink-2);padding:0 0 8px}
+.sick td{padding:5px 0;border-bottom:1px dotted var(--rule);vertical-align:top}
+.sick tbody td:last-child{text-align:right;color:var(--stamp);white-space:nowrap;padding-left:12px}
+.sick tfoot td{border-bottom:0;color:var(--ink-3);font-size:11.5px;font-family:var(--body);padding-top:8px}
+.stops{display:grid;gap:0}
+.stop{padding-block:56px;border-top:1px dotted var(--rule);scroll-margin-top:24px}
+.stop:first-child{border-top:0;padding-top:16px}
+.stop .when{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:12px}
+.stop .when .eyebrow{color:var(--stamp)}
+.stop .when .dur{font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+.stop h3{font-size:clamp(28px,3.4vw,38px);font-weight:400;letter-spacing:-.015em;margin-bottom:6px}
+.stop .unit{font-size:15px;color:var(--ink-2);font-style:italic;margin-bottom:22px}
+.stop .splash{margin:0 0 24px;display:grid;gap:8px}
+.stop .splash img{width:100%;border-radius:2px;box-shadow:var(--shadow)}
+.stop .splash figcaption{font-size:12.5px;line-height:1.45;color:var(--ink-2)}
+.stop .splash figcaption small{display:block;color:var(--ink-3);font-size:11.5px;margin-top:2px}
+.stop .story p+p{margin-top:12px}
+.record{margin:22px 0 0;background:var(--card);border:1px solid var(--card-2);border-radius:3px;padding:14px 16px 12px;position:relative;
+  background-image:repeating-linear-gradient(180deg,transparent 0 23px,color-mix(in srgb,var(--rule) 28%,transparent) 23px 24px);background-origin:content-box}
+.record .eyebrow{font-size:11px;margin-bottom:8px;color:var(--ink-2)}
+.record ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.record li{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:0 12px;align-items:baseline}
+.record .d{font-family:var(--mono);font-size:13.5px;color:var(--ink-2);white-space:nowrap}
+.record .t{font-family:var(--mono);font-size:14px;line-height:1.45}
+.record .t small{display:block;color:var(--ink-3);font-size:12px;margin-top:1px}
+.record .src{margin-top:10px;font-size:12px;color:var(--ink-3)}
+.conf{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.conf .key{font-size:11.5px}
+.story .q{border-left:2px solid var(--stamp);padding-left:14px;color:var(--ink-2);font-style:italic}
+
+/* ---------- feature: Tobruk ---------- */
+.feature{background:var(--card);border:1px solid var(--card-2);border-radius:4px;padding:40px clamp(20px,4vw,48px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px}
+.feature h2{font-size:clamp(30px,3.6vw,42px);font-weight:300;margin-bottom:16px}
+.feature p+p{margin-top:12px}
+.evidence{display:grid;gap:0;align-self:start}
+.evidence h3{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-family:var(--body);font-weight:600;color:var(--ink-2);margin-bottom:10px}
+.evidence li{padding:12px 0;border-top:1px dotted var(--rule);display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start}
+.evidence ol{list-style:none;margin:0;padding:0}
+.evidence .d{font-family:var(--mono);font-size:13px;color:var(--stamp);white-space:nowrap;padding-top:2px}
+.evidence .d.h{color:var(--ink-3)}
+.evidence b{font-weight:600}
+
+/* ---------- same week ---------- */
+.week{display:grid;gap:0;border-top:1px dotted var(--rule)}
+.week .row{display:grid;grid-template-columns:9em minmax(0,1fr) minmax(0,1fr);gap:0 28px;padding:16px 0;border-bottom:1px dotted var(--rule);align-items:start}
+.week .d{font-family:var(--mono);font-size:14px;color:var(--stamp);padding-top:2px}
+.week .f{font-family:var(--mono);font-size:14px;line-height:1.5}
+.week .f small{display:block;color:var(--ink-3);font-size:12px;margin-top:2px}
+.week .w{font-size:15.5px;color:var(--ink-2)}
+.week .hd{font-family:var(--body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--ink-2);padding:8px 0}
+.week .hd .d,.week .hd .f{font-family:inherit;font-size:inherit;color:inherit}
+/* ---------- how we know ---------- */
+.how3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.how3 h3{font-size:20px;margin-bottom:8px}
+.how3 p{font-size:15px;color:var(--ink-2)}
+.how3 p+p{margin-top:8px}
+.how3 .k{display:inline-flex;align-items:center;gap:7px;margin-bottom:10px}
+
+/* ---------- documents ---------- */
+.docgroups{display:grid;gap:40px}
+.docgroup h3{font-size:22px;margin-bottom:6px}
+.docgroup .muted{margin-bottom:16px;max-width:66ch}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.thumb{display:grid;gap:8px;text-align:left;padding:0}
+.thumb .fr{aspect-ratio:3/4;background:var(--card);border:1px solid var(--card-2);border-radius:2px;overflow:hidden;display:grid;place-items:center;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .35s}
+.thumb:hover img{transform:scale(1.03)}
+.thumb .cap{font-size:13px;line-height:1.3;color:var(--ink-2)}
+.thumb .cap b{display:block;color:var(--ink);font-weight:600;font-family:var(--mono);font-size:12.5px}
+dialog.docdlg{border:0;padding:0;background:var(--paper);color:var(--ink);width:min(1240px,calc(100vw - 24px));height:min(900px,calc(100vh - 24px));border-radius:6px;box-shadow:var(--shadow);overflow:hidden}
+dialog.docdlg::backdrop{background:rgba(20,16,10,.72);backdrop-filter:blur(2px)}
+.dlg{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-rows:auto minmax(0,1fr);height:100%}
+.dlg header{grid-column:1/-1;display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--card-2);background:var(--card)}
+.dlg header .ttl{font-family:var(--display);font-size:19px;min-width:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dlg header .ttl small{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);margin-left:10px}
+.ibtn{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--card-2);background:var(--paper)}
+.ibtn:hover{background:var(--card-2)}
+.ibtn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dlg .view{position:relative;overflow:auto;background:var(--card-2);display:grid;place-items:center;cursor:zoom-in}
+.dlg .view.zoomed{cursor:zoom-out;place-items:start}
+.dlg .view img{max-height:100%;max-width:100%;object-fit:contain;box-shadow:0 2px 16px rgba(0,0,0,.25)}
+.dlg .view.zoomed img{max-width:none;max-height:none;width:200%}
+.dlg .tx{overflow:auto;padding:22px 24px 40px;border-left:1px solid var(--card-2);font-size:14.5px;line-height:1.5}
+.dlg .tx h4{font-family:var(--body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:18px 0 6px}
+.dlg .tx p{margin:0 0 10px}
+.dlg .tx b{font-family:var(--mono);font-weight:700;font-size:13.5px}
+.dlg .tx code{font-family:var(--body);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:11px;color:var(--stamp);border:1px solid var(--stamp);padding:0 4px;border-radius:2px}
+.dlg .tx .stampblock{font-family:var(--body);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:11.5px;color:var(--stamp);border:1.5px solid var(--stamp);padding:8px 10px;display:inline-block;transform:rotate(-1deg);white-space:pre-wrap;margin:6px 0 12px}
+.dlg .tx table{border-collapse:collapse;width:100%;margin:8px 0 14px;font-size:13px}
+.dlg .tx th,.dlg .tx td{border:1px solid var(--card-2);padding:5px 7px;vertical-align:top;text-align:left}
+.dlg .tx th{font-weight:600;background:var(--card);font-family:var(--body);font-size:12px}
+.dlg .tx ul{padding-left:18px;margin:0 0 10px}
+.dlg .tx s{color:var(--ink-3)}
+.dlg .tx .note{font-size:12.5px;color:var(--ink-3);border-top:1px dotted var(--rule);padding-top:10px;margin-top:16px}
+.tx-wrap{overflow-x:auto}
+
+/* ---------- medals ---------- */
+.medals{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px}
+.medal{display:grid;gap:12px;align-content:start}
+.medal svg{width:100%;height:auto;display:block}
+.medal h3{font-size:19px;line-height:1.15}
+.medal p{font-size:14px;color:var(--ink-2)}
+.medal .mono{font-family:var(--mono);font-size:12.5px;color:var(--ink-3)}
+
+/* ---------- questions, glossary, more ---------- */
+.qs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.q{background:var(--card);border:1px solid var(--card-2);border-radius:3px;padding:20px 22px}
+.q h3{font-size:20px;margin-bottom:8px}
+.q p{font-size:15px;color:var(--ink-2)}
+.gloss{columns:2;column-gap:40px;font-size:15px}
+.gloss dl{margin:0}
+.gloss div{break-inside:avoid;display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;padding:5px 0;border-top:1px dotted var(--rule)}
+.gloss dt{font-family:var(--mono);font-weight:700;font-size:13.5px}
+.gloss dd{margin:0;color:var(--ink-2)}
+.gloss sup{color:var(--stamp);font-size:10px}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.more h3{font-size:20px;margin-bottom:8px}
+.more p,.more li{font-size:15px;color:var(--ink-2)}
+.more ul{padding-left:18px;margin:8px 0 0}
+.more li+li{margin-top:4px}
+.colophon{border-top:1px solid var(--card-2);padding-top:28px;font-size:14px;color:var(--ink-2);display:grid;gap:8px;max-width:72ch}
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px){
+  .hero{grid-template-columns:1fr;gap:34px;padding-block:40px 24px}
+  .hero-media{max-width:560px;padding-bottom:18%}
+  .regalia{grid-template-columns:1fr}
+  .slip,.letter{grid-template-columns:1fr}
+  .intro{grid-template-columns:1fr;gap:28px}
+  .jgrid{grid-template-columns:1fr}
+  .mapwrap{top:0;background:var(--paper);padding-top:8px;padding-bottom:8px;margin-left:calc(-1 * max(16px, env(safe-area-inset-left, 0px)));margin-right:calc(-1 * max(16px, env(safe-area-inset-right, 0px)));padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+  .mapbox{max-width:min(420px,52vh);margin:0 auto}
+  .maplegend{justify-content:center}.maplegend .note{margin-left:0;width:100%;text-align:center}
+  .mapcap{text-align:center}
+  .feature{grid-template-columns:1fr}
+  .dlg{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1.2fr) minmax(0,1fr)}
+  .dlg .tx{border-left:0;border-top:1px solid var(--card-2)}
+  .gloss{columns:1}
+}
+@media (max-width: 560px){
+  body{font-size:16px}
+  .hero .facts{grid-template-columns:repeat(2,auto)}
+  .record li{grid-template-columns:1fr}
+  .thumbs{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+  .gloss div{grid-template-columns:6em minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="mast-top">
+    <span class="eyebrow">Union Defence Force &middot; South African Medical Corps &middot; 1940&ndash;1945</span>
+    <span class="ref">Personnel file No. 176073V</span>
+  </div>
+  <div class="hero">
+    <div>
+      <h1>Aubrey Mitchell <em>Lapinsky</em></h1>
+      <p class="sub lede">An articled clerk from Bloemfontein who served five years and thirty-three days with the medical corps: from a recruit camp near Pretoria to the Western Desert, Tripoli and Syria, and home again by air.</p>
+      <div class="facts">
+        <div><b>23 Jul 1940</b><span>Attested</span></div>
+        <div><b>21 Jun 1941</b><span>Landed at Suez</span></div>
+        <div><b>24 Aug 1945</b><span>Discharged</span></div>
+        <div><b>5 yrs 33 days</b><span>Reckonable service</span></div>
+        <div><b>Corporal</b><span>Final rank</span></div>
+        <div><b>Five</b><span>Campaign medals</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <figure class="photo">
+        <img src="img/portrait.jpg" alt="Studio portrait of Aubrey Mitchell Lapinsky in battledress: round spectacles, moustache, hair combed back" width="600" height="860">
+        <figcaption>Studio portrait in battledress, undated, from the family&rsquo;s framed medal group.</figcaption>
+      </figure>
+      <figure class="card-shot">
+        <img src="docs/P20.jpg" alt="His D.D. 732 record card: name in block capitals, red diagonal cancellation line, and the red-ink note Emplaned for Union on Home Exchange, dated 16 August 1944" width="1178" height="738">
+        <figcaption><b>D.D. 732 record card</b>, closed in Cairo, 16 August 1944: &ldquo;Emplaned for Union on Home Exchange.&rdquo;</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="intro">
+    <div class="measure">
+      <p>This page is built from his service file, held by the South African National Defence Force Documentation Centre in Pretoria: twenty-seven pages of record cards, conduct sheets, an attestation, discharge papers and medal forms, written in ink, pencil and rubber stamp by clerks in Sonderwater, Cairo and Bloemfontein. Every page is reproduced below with a full transcription.</p>
+      <p>The file is terse. It says where he was posted and when, but not what he saw. So each stop on the journey keeps three things apart: what the record says, what published history says about his units, and what we can only infer.</p>
+      <div class="keys" aria-label="How to read the labels">
+        <span class="key k-rec"><i></i>From his record</span>
+        <span class="key k-hist"><i></i>Published history</span>
+        <span class="key k-pub"><i></i>Public records</span>
+        <span class="key k-inf"><i></i>Inferred</span>
+      </div>
+    </div>
+    <aside class="how">
+      <h3>Who he was, in the file&rsquo;s own words</h3>
+      <p class="small muted">Born Durban, 15 December 1918. Religion: Jewish. Trade on attestation: accountant; on discharge: clerk. Articled to J.C. McIntyre, Chartered Accountant, Bloemfontein. Height 5&prime;7&Prime; at 21 (5&prime;9&Prime; by the discharging officer&rsquo;s tape five years later), brown eyes, dark hair, no distinctive marks. Next of kin: his father, Nathan Lapinsky, 24 Alexandra Avenue, Bloemfontein; then, from 19 August 1944, his wife Ada, n&eacute;e Kimmel, 14A Waverley Road.</p>
+      <ul>
+        <li>Character on discharge: <b>Very Good</b>. Conduct sheets: no entries.</li>
+        <li>Medical category A1 on attestation, C on discharge.</li>
+        <li>Officer Commanding&rsquo;s remark, August 1945: <i>&ldquo;Has performed his clerical and medical duties to my entire satisfaction.&rdquo;</i></li>
+      </ul>
+    </aside>
+  </div>
+</header>
+
+<!-- ============ JOURNEY ============ -->
+<section class="journey" id="journey">
+  <div class="sec-head">
+    <span class="eyebrow">The journey</span>
+    <h2>Fourteen stops, 1939 to 2009</h2>
+    <p class="lede">Scroll through the stops and the globe follows. Each stop quotes the entries from his file for that period, then sets them against what was happening around him. The last stop follows the family after the file ends.</p>
+  </div>
+  <div class="jgrid">
+    <div class="stops" id="stops"></div>
+    <div class="mapwrap">
+      <div class="mapbox" id="mapbox">
+        <canvas id="map" aria-label="Globe showing his route from South Africa to Egypt, Libya and Syria and back"></canvas>
+        <div class="ov" id="ov"></div>
+      </div>
+      <div class="maplegend" aria-label="Map legend">
+        <span><svg viewBox="0 0 28 8"><line x1="0" y1="4" x2="28" y2="4" stroke="var(--sea)" stroke-width="2.5"/></svg>By sea</span>
+        <span><svg viewBox="0 0 28 8"><line x1="0" y1="4" x2="28" y2="4" stroke="var(--road)" stroke-width="2.5" stroke-dasharray="2 3"/></svg>By land</span>
+        <span><svg viewBox="0 0 28 8"><line x1="0" y1="4" x2="28" y2="4" stroke="var(--air)" stroke-width="2.5" stroke-dasharray="6 4"/></svg>By air</span>
+        <span class="note">Sea and air routes are approximate.</span>
+      </div>
+      <p class="mapcap" id="mapcap"></p>
+      <div class="tl" aria-label="Timeline of the stops"><svg id="tl" viewBox="0 0 600 78" role="img" aria-hidden="true"></svg></div>
+      <p class="tlkey"><span><svg viewBox="0 0 10 8"><path d="M1 1h8l-4 6z" fill="var(--red)"/></svg>The wider war</span><span><svg viewBox="0 0 10 8"><path d="M1 1h8l-4 6z" fill="var(--card)" stroke="var(--red)" stroke-width="1.2"/></svg>Events touching his units</span><span>Hover or tap a marker for the date</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOBRUK ============ -->
+<section id="tobruk">
+  <div class="feature">
+    <div>
+      <span class="eyebrow">The day before Tobruk</span>
+      <h2>Why he was not captured</h2>
+      <p>On 21 June 1942 the fortress of Tobruk surrendered. Two complete infantry brigades of the 2nd South African Division and most of its supporting units went into captivity: 10,772 South Africans, by the official count. For the families of the division it was the worst day of the war.</p>
+      <p>His file records that he belonged to the 16th Field Ambulance, the medical unit of that division&rsquo;s 3rd Brigade. Yet the next entry after Cyrenaica places him with No. 8 Casualty Clearing Station in Egypt from 21 June, the very day Tobruk fell, and he was never a prisoner of war.</p>
+      <p>The explanation is in the order of battle rather than in his file. When the 2nd Division took over Tobruk in March 1942 it did so <i>less its 3rd Brigade</i>, which stayed outside the perimeter and was later transferred to the 1st Division. The 16th Field Ambulance went where its brigade went: the official medical history records it moving with the 3rd Brigade to El Adem on 22 March 1942, and lists it at Sollum, on the Egyptian frontier, on 2 June. How and exactly when he passed from his unit to the clearing station is not written down; the Force Order that struck him off the 16th&rsquo;s strength was issued on 3 July, twelve days after the surrender, which is the usual lag of paperwork catching up with events.</p>
+      <p class="muted small">What would settle it is the unit war diary of 16 Field Ambulance for June 1942, held in Pretoria. See <a href="#more">where to look</a>.</p>
+    </div>
+    <aside class="evidence">
+      <h3>The evidence, in order</h3>
+      <ol>
+        <li><span class="d h">22 Mar 1942</span><span>3rd Brigade, <b>with 16 Field Ambulance</b>, moves to El Adem under XIII Corps (Crew, <i>Army Medical Services</i>, vol. I). <span class="key k-hist"><i></i>History</span></span></li>
+        <li><span class="d h">27 Mar 1942</span><span>2nd SA Division, <b>less 3rd Brigade</b>, takes over the Tobruk garrison. <span class="key k-hist"><i></i>History</span></span></li>
+        <li><span class="d h">2 Jun 1942</span><span>16 Field Ambulance listed at <b>Sollum</b>, on the frontier, as a non-divisional unit (Crew, appendix XVIII). <span class="key k-hist"><i></i>History</span></span></li>
+        <li><span class="d">20 Jun 1942</span><span>Last day shown for &ldquo;16th Fld. Ambulance, Egypt / Cyrenaica&rdquo; on his own medal application. <span class="key k-rec"><i></i>Record</span></span></li>
+        <li><span class="d h">21 Jun 1942</span><span>Tobruk surrenders; 10,772 South Africans captured. <span class="key k-hist"><i></i>History</span></span></li>
+        <li><span class="d">21 Jun 1942</span><span>First day shown for &ldquo;8 C.C.S., Egypt&rdquo;. <span class="key k-rec"><i></i>Record</span></span></li>
+        <li><span class="d h">23&ndash;25 Jun 1942</span><span>8 CCS closed at Mersa Matruh and sent back towards Alexandria as the army withdrew to Alamein (Crew). <span class="key k-hist"><i></i>History</span></span></li>
+        <li><span class="d">3 Jul 1942</span><span>&ldquo;Off strength &mdash; placed on S.A.M.C. gen. list&rdquo; from 16 F.A., Force Order 24/42/367 ME. <span class="key k-rec"><i></i>Record</span></span></li>
+        <li><span class="d">1945</span><span>&ldquo;Period spent as P.O.W., if any: &mdash;&rdquo; on his Details of Service. <span class="key k-rec"><i></i>Record</span></span></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ SAME WEEK ============ -->
+<section id="week">
+  <div class="sec-head">
+    <span class="eyebrow">The same week</span>
+    <h2>His file against the war</h2>
+    <p class="lede">The clerks never wrote down why a man was moved, promoted or sent home. Set beside the news of the same week, the entries start to explain themselves.</p>
+  </div>
+  <div class="week">
+    <div class="row hd"><span class="d">Date</span><span class="f">His file</span><span>That week</span></div>
+    <div class="row"><span class="d">23 Jul 1940</span><span class="f">Sworn before me at Sonderwater this 23rd day of July 1940.<small>D.D. 88B</small></span><span class="w">France had surrendered a month before and Italy had entered the war in June. The Battle of Britain was in its second week, and Italian forces in Abyssinia were about to march on British Somaliland, the Union&rsquo;s first front.</span></div>
+    <div class="row"><span class="d">9 Jun 1941</span><span class="f">Emb Durban for Mid East, per SS Ile de France, with 16 Fld Amb.<small>D.D. 293</small></span><span class="w">On 8 June British, Free French and Australian troops had crossed into Vichy-held Syria, the country where his war would end three years later. On 22 June, the morning after he landed at Suez, Germany invaded the Soviet Union.</span></div>
+    <div class="row"><span class="d">21 Jun 1942</span><span class="f">Services rendered outside the Union: 8 C.C.S., Egypt, from 21.6.42.<small>D.D. 873</small></span><span class="w">Tobruk surrendered that morning. Churchill was in the White House with Roosevelt when the news arrived; he later wrote that it was one of the heaviest blows of the war. Rommel was promoted field marshal the next day.</span></div>
+    <div class="row"><span class="d">19 Oct 1942</span><span class="f">Promoted to T/L/Cpl.<small>FO 40/42/260 ME</small></span><span class="w">Four nights later, at 9.40 pm on 23 October, nearly nine hundred guns opened the Second Battle of El Alamein, sixty miles west of his unit&rsquo;s camp at Abd el Qadir. Twelve days of fighting broke Rommel&rsquo;s army.</span></div>
+    <div class="row"><span class="d">25 Jan 1943</span><span class="f">Admitted to hospital &mdash; on X2 list.<small>FO 6/43/260 ME</small></span><span class="w">Two days earlier the Eighth Army had entered Tripoli, 1,400 miles from Alamein. On 24 January Churchill and Roosevelt closed the Casablanca conference by announcing that only unconditional surrender would end the war.</span></div>
+    <div class="row"><span class="d">13 Apr 1943</span><span class="f">Services rendered outside the Union: Tripolitania, from 13/4/43.<small>D.D. 873</small></span><span class="w">A month later, on 13 May, the last Axis forces in Africa surrendered in Tunisia, a quarter of a million men. The campaign his Africa Star commemorates was over; the war in the Mediterranean moved to Sicily in July.</span></div>
+    <div class="row"><span class="d">16 Dec 1943</span><span class="f">Services rendered outside the Union: Syria, from 16/12/43.<small>D.D. 873</small></span><span class="w">A fortnight earlier Churchill, Roosevelt and Stalin had met at Tehran and fixed the invasion of France for the following spring. Syria and Lebanon, under Ninth Army, were the Allies&rsquo; quiet rear: training grounds, hospitals and leave camps.</span></div>
+    <div class="row"><span class="d">6 Aug 1944</span><span class="f">Emplaned for Union on Home Exch.<small>SAMC GL O/33</small></span><span class="w">In Normandy the Allies were breaking out towards Paris; in Warsaw the uprising was in its first week; in the Pacific the Marianas had fallen. In Egypt the war had moved on, and men who had been away three years were being sent home.</span></div>
+    <div class="row"><span class="d">19 Aug 1944</span><span class="f">Next-of-Kin: WIFE, Mrs A. Lapinsky, 14A Waverley Road, Bloemfontein.<small>UO 96/44/593</small></span><span class="w">The same day the Paris police rose against the German garrison; the city was liberated on 25 August. His card, meanwhile, records the only wedding it would ever notice.</span></div>
+    <div class="row"><span class="d">1 Jan 1945</span><span class="f">Prom. from L/Cpl to T/Cpl. (Cat. C)<small>UO 11/45/1572</small></span><span class="w">New Year&rsquo;s Day: the German Ardennes offensive, the Battle of the Bulge, was in its third week, and the Luftwaffe flew its last great raid on the Allied airfields in Belgium and Holland that morning.</span></div>
+    <div class="row"><span class="d">24 Aug 1945</span><span class="f">Discharged. Reason: Partial Demobilisation. Character: Very Good.<small>D.G.D. III</small></span><span class="w">Japan had announced its surrender on 15 August; the instrument was signed in Tokyo Bay on 2 September. He was discharged in the nine days between, five years and thirty-three days after he had sworn his oath at Sonderwater.</span></div>
+  </div>
+  <div class="conf" style="margin-top:16px"><span class="key k-rec"><i></i>From his record</span><span class="key k-hist"><i></i>Published history</span></div>
+</section>
+
+<!-- ============ LIFE ============ -->
+<section id="life" class="life">
+  <div class="sec-head">
+    <span class="eyebrow">Between the entries</span>
+    <h2>What life was like</h2>
+    <p class="lede">His file records his illnesses as dates. Two histories written from the medical units&rsquo; own diaries say what the desert did to the men in them.</p>
+  </div>
+  <div class="cols">
+    <div>
+      <h3>Flies, dust and the three-day fever</h3>
+      <p>The South African hospitals in Egypt were tented towns pitched on sand, their wards fifty feet apart as a precaution against air raids, with no paths between them; staff trudged from tent to tent while the equipment was still on trains from Suez. Air-raid sirens, dust storms and flies set the rhythm of the work. The summer of 1942, when the army fell back on Alamein, was the season when flies and dust were at their worst in extreme heat, and the medical corps&rsquo; hygiene chief wrote afterwards that each draft of reinforcements arrived &ldquo;unsalted&rdquo; and went down with what the men called guppy tummy and sandfly fever.</p>
+      <p>Sandfly fever was a three-day fever with headache and pains all over, widespread, mild, and over quickly; its cause was disputed until the sandfly itself was caught at Mersa Matruh, his unit&rsquo;s town. Desert sores, the small septic wounds that refused to heal, made up at least half of the minor sick reporting to regimental aid posts. The army&rsquo;s own medical history adds that the long shorts issued for the desert were &ldquo;entirely unsuitable&rdquo;, and that sun helmets went only to one man in ten.</p>
+      <h3>The sick list</h3>
+      <p>In the three months after the 2nd Division landed, South African troops in the Middle East went sick at the rates in the table, per thousand men. The complaint that put him in hospital in January 1943, dysentery, was the commonest serious one: at No. 101 South African General Hospital in the three months from July 1942 the admissions were led by diarrhoea and dysentery, then venereal disease, then malaria. September was the height of the malaria season; men were reminded to be &ldquo;mosquito-minded&rdquo;, and some refused quinine on the rumour that it caused impotence. Behind the field ambulances, two convalescent camps at Sollum and Sidi Bengalad held three hundred men each for a week or ten days of rest and feeding rather than evacuate them; his unit was at Sollum in June 1942.</p>
+      <h3>The hygiene war</h3>
+      <p>The medical corps fought a second war against dirt. At Mersa Matruh the South Africans worked from the middle of 1941 to December on latrines, water and refuse, and enteritis rose and fell with the standard of the camps; the hygiene officers were scathing about Allied troops who swam in water-supply tanks. Lice meant typhus, so hygiene sections deloused whole formations, prisoners and refugees. In June 1943 the commander of No. 5 Hospital warned that the cold drinks sold by hawkers were made with sewage water, and that the hawkers were re-using NAAFI corks to make the bottles look safe; every cork was to be collected and destroyed.</p>
+      <h3>Eighteen days in hospital</h3>
+      <p>A patient stayed a soldier. The standing orders of a South African general hospital put lights out from nine at night to six in the morning, with no smoking or talking in between; a man well enough to be up made his own bed, washed his eating irons, shaved before breakfast, came to attention at the foot of his bed for inspection, and did whatever light duties the matron found for him. The alcohol canteen, the staff lines and the venereal and infectious wards were out of bounds. His own eighteen days, from 25 January to 11 February 1943, were probably spent in the British No. 8 General Hospital at Alexandria rather than a South African one; the rules would have been much the same.</p>
+      <h3>Off duty</h3>
+      <p>The file gives him a week&rsquo;s local leave in February 1942 and a fortnight in September 1942, with two shillings a day ration allowance, the ordinary leave of a man in the Delta: Alexandria or Cairo, the Springbok Club, the cinemas and cafes. On Christmas Day 1943, by which time he was in Syria, No. 101 Hospital at Qassassin, with plague in the Canal Zone, decorated its tented wards, paraded its bugle band, served a special lunch, and in the afternoon put its football team, the 101 Yellows, against a side from his old unit, the 8th Casualty Clearing Station.</p>
+      <div class="conf" style="margin-top:20px"><span class="key k-rec"><i></i>From his record</span><span class="key k-hist"><i></i>Published history</span></div>
+    </div>
+    <div>
+      <figure><img src="img/places/life.jpg" alt="A hand-painted sign reading Vampire outside an advanced blood bank in the Western Desert, October 1942" loading="lazy" width="800" height="780"><figcaption>The &ldquo;Vampire&rdquo; sign of an Army Blood Transfusion Service advanced blood bank in the Western Desert, 29 October 1942: the dressing stations drew their blood from here.<small>Imperial War Museums, E 18700 (Sgt Chetwyn, No. 1 Army Film &amp; Photographic Unit). UK official photograph, Crown copyright expired.</small></figcaption></figure>
+      <table class="sick">
+        <caption>Sick, per 1,000 men &middot; U.D.F. in the Middle East, July&ndash;September 1941</caption>
+        <tbody>
+          <tr><td>Septic conditions, including desert sores</td><td>159</td></tr>
+          <tr><td>Fevers, including sandfly fever and influenza</td><td>150</td></tr>
+          <tr><td>Ear, nose and throat</td><td>95</td></tr>
+          <tr><td>Accidental injuries</td><td>73</td></tr>
+          <tr><td>Dysentery and enteritis</td><td>61</td></tr>
+          <tr><td>Malaria</td><td>57</td></tr>
+          <tr><td>Chest conditions</td><td>37</td></tr>
+          <tr><td>Skin conditions</td><td>29</td></tr>
+          <tr><td>Venereal disease</td><td>29</td></tr>
+          <tr><td>Stomach conditions</td><td>29</td></tr>
+          <tr><td>Eye conditions</td><td>25</td></tr>
+          <tr><td>Jaundice</td><td>18</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="2">Crew, <i>The Army Medical Services: Campaigns</i>, vol. I, table 43. Hospital admissions at No. 101 S.A.G.H., July&ndash;September 1942: diarrhoea and dysentery 758, venereal disease 599, malaria 159 (Horn, 2020, from the hospital&rsquo;s diary).</td></tr></tfoot>
+      </table>
+      <figure style="margin-top:24px"><img src="img/places/life2.jpg" alt="South African and Australian soldiers playing cards in a gun pit in North Africa" loading="lazy" width="800" height="790"><figcaption>South African and Australian soldiers at cards in a gun pit, North Africa, 1941&ndash;42.<small>Imperial War Museums, E 14671 (Sgt Travis, No. 1 Army Film &amp; Photographic Unit). UK official photograph, Crown copyright expired.</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCUMENTS ============ -->
+<section id="documents">
+  <div class="sec-head">
+    <span class="eyebrow">The file</span>
+    <h2>Twenty-seven pages</h2>
+    <p class="lede">Open any page to see the scan beside its transcription. Printed form text is set in the ordinary face; what the clerks wrote is in typewriter type; stamps are marked. A <b class="rec">[?]</b> flags an uncertain reading.</p>
+  </div>
+  <div class="docgroups" id="docgroups"></div>
+</section>
+
+<dialog class="docdlg" id="docdlg" aria-label="Document viewer">
+  <div class="dlg">
+    <header>
+      <button class="ibtn" id="dprev" aria-label="Previous page"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="ibtn" id="dnext" aria-label="Next page"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      <div class="ttl" id="dttl"></div>
+      <button class="ibtn" id="dzoom" aria-label="Zoom scan"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5M11 8v6M8 11h6"/></svg></button>
+      <button class="ibtn" id="dclose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </header>
+    <div class="view" id="dview"><img id="dimg" alt=""></div>
+    <div class="tx"><div class="tx-wrap" id="dtx"></div></div>
+  </div>
+</dialog>
+
+<!-- ============ LETTER ============ -->
+<section id="letter">
+  <div class="sec-head">
+    <span class="eyebrow">From the family</span>
+    <h2>A letter card, 26 July 1944</h2>
+    <p class="lede">An Active Service Letter Card, the air-mail stationery of the Union forces, addressed to him in Egypt eleven days before he flew home. The family keeps it as part of his correspondence with Ada Kimmel, whom he married that August.</p>
+  </div>
+  <div class="letter">
+    <figure>
+      <img src="img/letter-card.jpg" alt="Front of a blue-printed Active Service Letter Card with an imprinted 3d South African stamp, addressed in ink to L/Cpl A.M. Lapinsky, S.A.M.C. Wing, Administration H.Q., U.D.F., Middle East Forces, and dated 26/7/44 in the margin" width="1160" height="910">
+      <figcaption>Front of the card, with the address panel. The imprinted 3d stamp is postmarked; the card is torn at the top edge.</figcaption>
+    </figure>
+    <div>
+      <div class="addr">L/Cpl A.M. Lapinsky, No 176073(V)<br>S.A.M.C. Wing,<br>Administration H.Q.,<br>U.D.F.<br>MIDDLE EAST FORCES.<small>26/7/44, written in the margin. Imprinted 3d South Africa stamp, postmark illegible.</small></div>
+      <p>The address is a small piece of evidence in itself. On 9 July 1944 his file moved him from the 10/11 Field Ambulance to the S.A.M.C. General List; &ldquo;S.A.M.C. Wing, Administration H.Q.&rdquo; was where the mail of a medical-corps man without a unit was sent. The &ldquo;(V)&rdquo; after his number is the volunteer suffix that appears in red on his record cards. By the time the card reached Egypt he may already have been in the air.</p>
+      <p>The card is torn at the top and a corner of the stamp panel is gone: it has been handled, folded and kept for eighty years.</p>
+      <div class="conf"><span class="key k-rec"><i></i>From his record</span><span class="key k-inf"><i></i>Inferred</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEDALS ============ -->
+<section id="medals">
+  <div class="sec-head">
+    <span class="eyebrow">Entitlement</span>
+    <h2>Five medals, four in the frame</h2>
+    <p class="lede">The ribbons came first: the Africa Star&rsquo;s and the Africa Service Medal&rsquo;s while he was still serving, the 1939&ndash;45 Star&rsquo;s and Defence Medal&rsquo;s by post in January 1946. The medals themselves were engraved at the S.A. Mint and despatched on 1 March 1957 with the slip shown below. One never reached him: the Africa Star, with its 8th Army clasp, went missing in the post.</p>
+  </div>
+  <div class="regalia">
+    <figure><img src="img/ribbon-bar.jpg" alt="A bar of five medal ribbons" width="930" height="134"><figcaption>His ribbon bar, worn on the tunic: 1939&ndash;45 Star, Africa Star with the silver numeral of the 8th Army clasp, Defence Medal, War Medal, Africa Service Medal.</figcaption></figure>
+    <figure><img src="img/cap-badge.jpg" alt="Gilt and blue-enamel cap badge of the South African Medical Corps" width="490" height="216"><figcaption>Cap badge of the South African Medical Corps: the rod of Asclepius within a wreath, beneath the crown.</figcaption></figure>
+  </div>
+  <div class="medals">
+    <div class="medal">
+      <div class="mimg"><img src="img/medal-1939-45-star.jpg" alt="The 1939 to 1945 Star: a bronze six-pointed star on a ribbon of dark blue, red and light blue" loading="lazy"></div>
+      <h3>1939&ndash;45 Star</h3>
+      <p>For operational service. The slip describes the ribbon as &ldquo;dark blue, red and light blue in three equal vertical stripes&rdquo;, for the Navy, Army and Air Force.</p>
+      <p class="mono">Ribbon despatched 21/1/46</p>
+    </div>
+    <div class="medal">
+      <div class="mimg missing">
+        <svg viewBox="0 0 120 64" role="img" aria-label="Ribbon of the Africa Star: pale buff with a red centre stripe, a dark blue stripe and a light blue stripe, with 8th Army clasp"><rect width="120" height="64" fill="#d8c48e"/><rect x="24" y="0" width="7" height="64" fill="#1d2d6b"/><rect x="53" y="0" width="14" height="64" fill="#c8102e"/><rect x="89" y="0" width="7" height="64" fill="#8fbce8"/><rect x="18" y="26" width="84" height="12" fill="#b9a67c" stroke="#7a6a44" stroke-width="1"/><text x="60" y="35.5" text-anchor="middle" font-family="Georgia,serif" font-size="8.5" fill="#2b2620" letter-spacing=".5">8TH ARMY</text></svg>
+        <span>Missing in the post</span>
+      </div>
+      <h3>Africa Star, clasp &ldquo;8th Army&rdquo;</h3>
+      <p>For service in North Africa between June 1940 and May 1943; the clasp for service under Eighth Army from 23 October 1942. The transmittal slip ticks it and its clasp, but the medal was lost in the post and is not in the frame. Its ribbon is drawn here from the slip&rsquo;s description.</p>
+      <p class="mono">Ribbon issued by 10/11 Fld Amb</p>
+    </div>
+    <div class="medal">
+      <div class="mimg"><img src="img/medal-defence.jpg" alt="The Defence Medal on its flame-coloured ribbon with green edges and thin black stripes" loading="lazy"></div>
+      <h3>Defence Medal</h3>
+      <p>The British award for non-operational service, which for him covered the year at 140 Military Hospital, Tempe. &ldquo;Flame coloured with green edges, upon each of which is a narrow black stripe.&rdquo;</p>
+      <p class="mono">Ribbon despatched 21/1/46</p>
+    </div>
+    <div class="medal">
+      <div class="mimg"><img src="img/medal-war.jpg" alt="The War Medal 1939 to 1945 on its red, white and blue ribbon, showing the crowned head of King George VI" loading="lazy"></div>
+      <h3>War Medal 1939&ndash;45</h3>
+      <p>For twenty-eight days or more of full-time service anywhere during the war. The obverse carries the crowned head of King George VI.</p>
+      <p class="mono">Listed on the discharge card</p>
+    </div>
+    <div class="medal">
+      <div class="mimg"><img src="img/medal-africa-service.jpg" alt="The Africa Service Medal, reverse showing the map of Africa, on an orange ribbon with gold and green edges" loading="lazy"></div>
+      <h3>Africa Service Medal</h3>
+      <p>South Africa&rsquo;s own medal for volunteers who took the oath to serve outside the Union. Orange, &ldquo;with green and gold of the Springbok Colours&rdquo; at the edges; the reverse shows the map of Africa. The red &ldquo;V&rdquo; after his number and the stamp ANYWHERE on his cards record the oath.</p>
+      <p class="mono">Awarded by UO 34/44/1572</p>
+    </div>
+  </div>
+  <div class="slip">
+    <figure><img src="img/transmittal-slip.jpg" alt="Union Defence Forces transmittal slip listing eleven campaign stars and medals with ribbon descriptions, five of them ticked in ink, and the number 6 written against the number of items enclosed" width="1240" height="2000" loading="lazy"></figure>
+    <div>
+      <span class="eyebrow">With the medals, 1957</span>
+      <h3>The slip in the parcel</h3>
+      <p class="q">&ldquo;The Chief of the General Staff has the honour to transmit, with his compliments, the enclosed award(s) for service during the war of 1939-1945.&rdquo;</p>
+      <p>The Union Defence Forces sent every parcel of medals with this printed slip. It lists the eleven stars and medals of the war in the order they should be mounted, describes each ribbon, and names the clasps. A clerk has ticked his five, marked the 8th Army clasp against the Africa Star and struck out the alternatives, and written <b>6</b> against the number of items enclosed: five medals and one clasp.</p>
+      <p>The family&rsquo;s frame follows the slip&rsquo;s order, with the Defence Medal and War Medal above, the 1939&ndash;45 Star and Africa Service Medal below, and a space where the Africa Star should hang. The plaque reads &ldquo;World War 2, 1939&ndash;1944&rdquo;; his file carries his service to his discharge on 24 August 1945.</p>
+      <div class="conf"><span class="key k-rec"><i></i>From the family&rsquo;s documents</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPEN QUESTIONS ============ -->
+<section id="questions">
+  <div class="sec-head">
+    <span class="eyebrow">Still to find out</span>
+    <h2>What the file does not say</h2>
+    <p class="lede">A service record is a ledger of postings, not a diary. These are the gaps a family member or a researcher could close.</p>
+  </div>
+  <div class="qs">
+    <div class="q"><h3>What did he actually do?</h3><p>The family remembers him as a medic, and his commanding officer wrote &ldquo;clerical and medical duties&rdquo;. The file never names his trade within the unit: nursing orderly, stretcher-bearer and orderly-room clerk were all medical-corps jobs, and over five years he may have done more than one. The unit war diaries may say.</p></div>
+    <div class="q"><h3>Where was he on 20 June 1942?</h3><p>Outside Tobruk with 3rd Brigade, sick, on a course, or already in Egypt. The war diary of 16 Field Ambulance for June 1942 would answer this.</p></div>
+    <div class="q"><h3>What is the &ldquo;(V)&rdquo; in 10/11 Field Ambulance (V)?</h3><p>Probably &ldquo;Volunteer&rdquo;, but no source confirms it. The double number itself is now explained: the official medical history records that the remains of the 10th and 11th Field Ambulances were amalgamated in June 1942, after the 11th was overrun at Sidi Rezegh.</p></div>
+    <div class="q"><h3>Which hospital was &ldquo;No. 8 General&rdquo;?</h3><p>He was there with dysentery from 25 January to 11 February 1943. One form reads &ldquo;Tonsilitis&rdquo; for the same stay. Neither its location nor whether it was a South African or British hospital has been found.</p></div>
+    <div class="q"><h3>What took the unit to Syria?</h3><p>Seven months under Ninth Army, December 1943 to July 1944. The South African presence there is thinly documented; the unit&rsquo;s war diary is the only likely source.</p></div>
+    <div class="q"><h3>The flight home</h3><p>&ldquo;Home Exchange&rdquo; appears to be a scheme that swapped long-serving men for fresh drafts. The likely route was Cairo, Khartoum, Kisumu, Pretoria, by SAAF transport, over about three days. This is inferred, not recorded.</p></div>
+  </div>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section id="glossary">
+  <div class="sec-head">
+    <span class="eyebrow">Reading the cards</span>
+    <h2>The clerks&rsquo; shorthand</h2>
+    <p class="lede">Every abbreviation that appears in the file. Entries marked <sup>&dagger;</sup> are confirmed from Jim Findlay&rsquo;s <i>South African Military Abbreviations</i>; the rest are standard Union Defence Force usage of the period.</p>
+  </div>
+  <div class="gloss" id="gloss"></div>
+</section>
+
+<!-- ============ HOW WE KNOW ============ -->
+<section id="how">
+  <div class="sec-head">
+    <span class="eyebrow">Method</span>
+    <h2>How we know what we know</h2>
+    <p class="lede">Three kinds of statement appear on this page, and they are not equally certain. The labels under each stop say which is which.</p>
+  </div>
+  <div class="how3">
+    <div>
+      <span class="key k-rec k"><i></i>From his record</span>
+      <h3>The file</h3>
+      <p>Twenty-seven pages from the Department of Defence archives in Pretoria: his attestation, record cards kept in Cairo and Pretoria, conduct sheets, discharge papers and medal forms. Every page is reproduced above and was transcribed word for word, including the clerks&rsquo; mistakes. Where a reading is uncertain it is marked [?]. Where two forms disagree, both readings are given.</p>
+      <p>These entries are the only facts about him in this story. Everything else is context.</p>
+    </div>
+    <div>
+      <span class="key k-hist k"><i></i>Published history</span>
+      <h3>The histories</h3>
+      <p>The movements of his units come from the British official medical history, F.A.E. Crew&rsquo;s <i>The Army Medical Services: Campaigns</i> (1956&ndash;57), which names the South African field ambulances at Mersa Matruh in 1941, explains the 10/11 amalgamation, and places his unit at Abd el Qadir in 1942. The convoy he sailed in is in the Admiralty&rsquo;s war diary for the South Africa station. The battles, dates and figures are from the Union War Histories and the standard accounts.</p>
+      <p>These say where his unit was. They do not say where he was within it. The dates of the family&rsquo;s later lives come from a fourth source, the burial registers indexed by the University of Cape Town, and are marked as public records.</p>
+    </div>
+    <div>
+      <span class="key k-inf k"><i></i>Inferred</span>
+      <h3>The gaps</h3>
+      <p>Why he was in Egypt when Tobruk fell, what he did on the wards, the route of the flight home, and the tone of a wedding arranged in a fortnight: these are readings of the evidence, not statements in it. They are written as such, and they could be overturned by a single page of a unit war diary.</p>
+      <p>The war diaries of his four units exist in Pretoria and have not yet been read. They are the next step.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MORE ============ -->
+<section id="more">
+  <div class="sec-head">
+    <span class="eyebrow">Going further</span>
+    <h2>Where to look next</h2>
+  </div>
+  <div class="more">
+    <div>
+      <h3>Unit war diaries</h3>
+      <p>The diaries of 16 Field Ambulance, 8 Casualty Clearing Station, 10/11 Field Ambulance and 140 Military Hospital are held by the Department of Defence Documentation Centre (SANDF Archives), Pretoria. Requests are made in writing with his number, 176073V, the unit names and the exact date ranges from this page. There is no online index; phone first to confirm the address and copying fees.</p>
+      <ul>
+        <li>Documentation Centre, 42 Saturnus Road, Irene, Pretoria 0157 &middot; Private Bag X289, Pretoria 0001 &middot; +27 12 670 8127 &middot; archive@dod.mil.za (reading room closed Mondays and Fridays)</li>
+        <li>Medical-corps unit diaries are filed in the archive&rsquo;s &ldquo;GG&rdquo; (Geneesheer-Generaal) group, boxed by unit and month. The Scheepers Collection, Box 3, holds an unpublished narrative, <i>SA Medical Services in the Middle East</i>.</li>
+        <li>The UK National Archives at Kew holds none of the South African unit diaries, but the diaries of the British medical headquarters above them record where each stood: first WO 177/93, D.D.M.S. Union Defence Force, September 1941 to April 1943; then WO 177/324 (Eighth Army), WO 177/351 (XIII Corps), WO 177/42 (British Troops in Egypt) and WO 177/328 (Ninth Army). Copies can be ordered online.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Published histories</h3>
+      <ul>
+        <li><b>Free online:</b> F.A.E. Crew, <i>The Army Medical Services: Campaigns</i>, vols. I and II (HMSO, 1956&ndash;57), the British official medical history, names the South African units; it is the source of the Matruh, Sidi Rezegh and Abd el Qadir facts on this page. Scans are on archive.org and generalstaff.org.</li>
+        <li>Agar-Hamilton &amp; Turner, <i>Crisis in the Desert, May&ndash;July 1942</i> (1952): the key volume on the 2nd Division and Tobruk. No scan exists; copies surface at Antiquarian Auctions.</li>
+        <li>Agar-Hamilton &amp; Turner, <i>The Sidi Rezeg Battles, 1941</i> (1957): borrowable free on archive.org.</li>
+        <li>Orpen, <i>War in the Desert</i> (1971): second-hand only (Quagga Books, Kalk Bay).</li>
+        <li>SA Jewish Board of Deputies, <i>South African Jews in World War II</i> (1950): not digitised; a hardcover was listed at about R285 by bookdealers.co.za. Whether it carries a full roll of servicemen is unconfirmed.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Rolls of Jewish servicemen</h3>
+      <ul>
+        <li>UCT&rsquo;s <i>South African Jewish Rootsbank</i> has a searchable list of South African Jews who served in the war (jewishroots.uct.ac.za, Military Records).</li>
+        <li>JewishGen&rsquo;s &ldquo;They Fought for South Africa&rdquo; database transcribes 830 names from a 1945 pamphlet; it is incomplete.</li>
+        <li>The Kaplan Centre at UCT and the SAJBD Archive in Johannesburg can be asked for an entry under &ldquo;Lapinsky, Aubrey Mitchell, 176073V&rdquo;.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Ask the family</h3>
+      <p>Things only relatives might remember: what he said about Egypt and Syria; whether he spoke of the flight home; how he and Ada Kimmel met, and whether the wedding was planned by letter through the years away.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="colophon">
+  <p>Source: SANDF Documentation Centre personnel file 176073, obtained through Nel Antiques, October 2026. Transcribed from 300 dpi scans; faded pencil entries read with contrast enhancement and cross-checked against duplicate cards. Convoy CM 12 from the Admiralty war diary for South Africa, 10 June 1941 (naval-history.net); the positions of 16 Field Ambulance, 8 C.C.S. and 10/11 Field Ambulance from F.A.E. Crew, <i>The Army Medical Services: Campaigns</i>, vol. I pp. 281&ndash;2 and vol. II pp. 249&ndash;50 (HMSO, 1956&ndash;57); order-of-battle and casualty figures from the published histories named above; burial dates from the University of Cape Town&rsquo;s South African Jewish Rootsbank cemetery index, confirmed by the family; period photographs from the Imperial War Museums (UK official photographs, Crown copyright expired) and the Nationaal Archief (CC0), credited under each; items marked as inferred are the author&rsquo;s reading of the evidence, not statements in the file.</p>
+  <p>Portrait, medals, cap badge, ribbon bar, letter card and transmittal slip photographed by the family, October 2026, and cropped from those photographs; the Africa Star ribbon is drawn from the slip&rsquo;s description. Map: Natural Earth 1:50m via world-atlas, drawn with d3-geo. Typefaces Fraunces, Source Serif 4 and Courier Prime, bundled.</p>
+</footer>
+
+</div>
+
+<script src="lib/d3.min.js"></script>
+<script src="data/region.js"></script>
+<script src="data/docs.js"></script>
+<script>
+(function(){
+'use strict';
+const REC='<span class="key k-rec"><i></i>From his record</span>', HIST='<span class="key k-hist"><i></i>Published history</span>', PUB='<span class="key k-pub"><i></i>Public records</span>', INF='<span class="key k-inf"><i></i>Inferred</span>';
+
+/* ---------------- stops ---------------- */
+const STOPS=[
+{id:'bloemfontein',t:['1939-06-01','1940-07-22'],dates:'June 1939 &ndash; July 1940',dur:'about a year, part-time',place:'Bloemfontein',sub:'Orange Free State',unit:'4th Brigade Signal Company, Active Citizen Force &middot; part-time number 3038',coord:[26.21,-29.12],view:'union',
+ record:[['approx 1/6/39','Date of attestation (part-time): <i>App. 1/6/39</i>. Name of part time unit: <i>4th Bde. Signal Coy.</i>','D.D. 873'],['23/7/40','Do you now belong to any of His Majesty&rsquo;s forces? <i>S.A.C.S.</i> Former service: <i>One Year.</i>','D.D. 88B']],
+ story:`<p>He was twenty when the Union declared war on 6 September 1939. He was already a part-time soldier: a signaller in the 4th Brigade Signal Company of the Active Citizen Force, the Union&rsquo;s volunteer reserve, which drilled in the evenings and camped in the holidays. By day he was an articled clerk to J.C. McIntyre, a chartered accountant in Bloemfontein, and he lived with his father Nathan at 24 Alexandra Avenue.</p><p>South Africa could not conscript men for service beyond its borders. Everyone who went north went as a volunteer, and in the first year of the war the Union Defence Force had more volunteers than it could equip.</p>`,
+ conf:[REC,HIST]},
+{id:'sonderwater',t:['1940-07-23','1941-06-08'],dates:'23 July 1940 &ndash; 8 June 1941',dur:'10&frac12; months',place:'Sonderwater',sub:'near Cullinan, Transvaal',unit:'Recruit Training Centre, then 16th Field Ambulance, S.A.M.C.',coord:[28.52,-25.67],view:'union',
+ record:[['23 Jul 1940','Sworn before me at <i>Sonderwater</i> this <i>23rd</i> day of <i>July</i> 1940. Age <i>21 years 7 months</i>. Trade: <i>Accountant</i>. Height <i>5&prime; 7&Prime;</i>. Weight <i>136</i>.','D.D. 88B'],['25/7/40','Drafted into R.T.C. (Recruit)','UO 36/40/274'],['no date','Posted to 16 Fld Amb ex R.T.C.','UO 5/40/273'],['1.2.41','Sick Leave to 6.2.41','UO 33/41/273']],
+ story:`<p>Sonderwater, forty kilometres east of Pretoria, was the Union&rsquo;s great wartime camp: a tented city on the veld beside the Premier diamond mine, later the site of the largest Italian prisoner-of-war camp in the Empire. He attested there on 23 July 1940 and swore the oath printed on his form: to serve <i>&ldquo;in Africa whether within or outside of the limits of South Africa for the duration of the present War.&rdquo;</i> Men who took it wore red tabs on their shoulder straps, and a red <b>V</b> was added after their numbers. The purple stamp ANYWHERE on his later cards marks the wider general-service oath that replaced it.</p><p>Two days later he was drafted into the medical corps&rsquo; recruit training centre and, within the week, posted to the 16th Field Ambulance. A field ambulance was not a vehicle but a unit of about 240 men: doctors, nursing orderlies, stretcher-bearers, drivers, cooks and clerks, who followed an infantry brigade and ran its dressing stations. The Union built its field ambulances heavier than the British pattern, on lessons from East Africa in 1916: each company could work on its own, the main dressing station was equipped for major surgery, and the unit had lorries enough to keep up with a motorised brigade. In practice, the official medical history says, a South African field ambulance could act as a small hospital at need. The 16th was raised for the 3rd Brigade of the newly formed 2nd South African Division.</p><p>Where the unit trained through the summer of 1940&ndash;41 is not written in his file; only a week&rsquo;s sick leave in February 1941 breaks the silence.</p>`,
+ conf:[REC,HIST]},
+{id:'durban',t:['1941-06-09','1941-06-10'],dates:'9 June 1941',dur:'one day',place:'Durban',sub:'Natal',unit:'16th Field Ambulance, embarking for the Middle East',coord:[31.03,-29.86],view:'voyage',
+ record:[['9.6.41','Emb Durban for Mid East 9.6.41, per SS. Ile de France, with 16 Fld Amb (KR 218).','D.D. 293, Moves']],
+ story:`<p>The 2nd Division sailed for Egypt in the winter of 1941. His unit embarked at Durban, the city of his birth, on the French liner <i>Ile de France</i>: 43,000 tons, built in 1927 for the Atlantic run and now a troopship carrying up to seven thousand men between Durban and Suez. She left harbour on 10 June in convoy CM 12 with the <i>Mauretania</i> and the <i>Nieuw Amsterdam</i>, escorted by the cruiser HMS <i>Cornwall</i>.</p>`,
+ conf:[REC,HIST]},
+{id:'sea',t:['1941-06-10','1941-06-21'],dates:'10 &ndash; 21 June 1941',dur:'11 days at sea',place:'Durban to Suez',sub:'by way of the Mozambique Channel, Aden and the Red Sea',unit:'Convoy CM 12',coord:[45.03,12.78],view:'voyage',
+ record:[['21 JUN 41','DISEMBARKED SUEZ <span class="muted">(stamp)</span> &middot; Dis Emb at Suez 21.6.41 (FO 1/41/413 ME)','D.D. 732; D.D. 293']],
+ story:`<p>Fast liners sailed with little escort, relying on speed and a zig-zag course. Eleven days took the convoy up the east coast of Africa, past the Horn to Aden, and the length of the Red Sea to Suez, where he stepped ashore on 21 June 1941. The next morning Germany invaded the Soviet Union, and the war he had joined became a world war.</p><p>The route drawn on the globe is the usual one for these convoys, not a track from the file.</p>`,
+ conf:[REC,HIST,INF]},
+{id:'desert',photo:{cap:'Mersa Matruh in November 1942, as the Eighth Army re-entered it after Alamein: the harbour town where his unit and 8 C.C.S. were based through the winter of 1941&ndash;42.',credit:'Imperial War Museums, E 19321 (Capt Keating, No. 1 Army Film &amp; Photographic Unit). UK official photograph, Crown copyright expired.',alt:'Mersa Matruh, Egypt, photographed in November 1942',w:724,h:443},t:['1941-06-21','1942-03-21'],dates:'June 1941 &ndash; March 1942',dur:'9 months',place:'Mersa Matruh, Bardia and Sollum',sub:'Egypt and Cyrenaica',unit:'16th Field Ambulance, 2nd South African Division',coord:[27.24,31.35],view:'desert',
+ record:[['23 July 41','Granted 4d p.d. annual increment','P.II O 5, 4.8.41'],['6/2/42 &ndash; 13/2/42','Granted local leave + 2/- p.d. ration allce.','P.II O 7, 23.2.42']],
+ story:`<p>The 2nd Division reached Egypt in the winter of 1941 and was first spread between Mareopolis, the Wadi Natrun and El Alamein, learning the ground. As Operation Crusader opened in November it took over the frontier defences from the 4th Indian Division, and the British official medical history places his unit exactly: the headquarters company of 16 (S.A.) Field Ambulance was with 3rd Brigade at Mersa Matruh, another company was running a main dressing station in the town, and 8 (S.A.) Casualty Clearing Station, the unit he would join seven months later, was the town&rsquo;s static hospital.</p><p>The 3rd Brigade made its own attempt on Bardia in mid-December, called off on the 17th with heavy casualties. For the full divisional assaults on Bardia and Sollum, 30 December 1941 to 11 January 1942, the same history gives the unit&rsquo;s layout: its main dressing station at Sidi Azeiz, an advanced dressing station on the Capuzzo&ndash;Bardia road, a detachment north of the Bardia perimeter, a detachment at Menastir serving the 3rd Brigade, and one at the Sidi Azeiz landing ground. Bardia fell on 2 January with 7,775 prisoners, Sollum and the Halfaya Pass by 17 January. His own entries for these months are the pay clerk&rsquo;s: a fourpenny-a-day increment on his first anniversary, and a week&rsquo;s local leave in February 1942 with two shillings a day ration allowance.</p>`,
+ conf:[REC,HIST]},
+{id:'gazala',photo:{cap:'A field dressing station in the Western Desert, 12 June 1942, the week the Gazala line was given up: stretcher cases in the foreground, surgery under canvas behind.',credit:'Imperial War Museums, E 13325 (Sgt Chetwyn, No. 1 Army Film &amp; Photographic Unit). UK official photograph, Crown copyright expired.',alt:'A field dressing station in the Western Desert, June 1942: stretcher cases in the foreground and surgery under canvas behind',w:800,h:795},t:['1942-03-22','1942-06-20'],dates:'22 March &ndash; 20 June 1942',dur:'3 months',place:'El Adem, Gazala and Sollum',sub:'Cyrenaica and the Egyptian frontier',unit:'16th Field Ambulance, 3rd Brigade, now with 1st South African Division',coord:[23.91,31.86],view:'desert',
+ record:[['10.6.41 &ndash; 20.6.42','Services rendered outside the Union: <i>16th Fld. Ambulance, Egypt / Cyrennaica</i> [sic]','D.D. 873'],['1945','Campaigns (showing Actual Unit Member served in): <i>Middle East and Syria. 16th Field Ambulance 3rd Bde. 2nd Division.</i>','D.D. 872']],
+ story:`<p>On 22 March 1942, the official medical history records, &ldquo;S.A. 3rd Inf. Bde. with 16 (S.A.) Fd. Amb. moved to El Adem to come under command of XIII Corps.&rdquo; Four days later the rest of the 2nd Division marched into Tobruk. The 3rd Brigade and its field ambulance did not: they joined the 1st South African Division on the Gazala line, the forty miles of minefields and brigade boxes west of Tobruk that the Eighth Army held through the spring.</p><p>By 2 June, a week after Rommel attacked the line, the unit is listed at Sollum, on the Egyptian frontier, as a non-divisional unit of the line of communication. The Gazala line was abandoned on 14 June. On 21 June, the day Tobruk fell, the 1st Division was ordered out of the Hamra box on the frontier and &ldquo;S.A. 3rd Bde. moved by the desert route to Alamein.&rdquo; His own last day with the 16th is 20 June. The unit was never inside the fortress; the panel below sets out the evidence.</p>`,
+ conf:[REC,HIST]},
+{id:'ccs',photo:{cap:'A South African soldier in a prisoner-of-war cage in the desert, photographed by a German war correspondent on 23 June 1942, two days after Tobruk fell.',credit:'Nationaal Archief, Spaarnestad collection, 29053 010 (Tannenberg, Kriegsberichter). CC0.',alt:'A South African prisoner of war in a desert camp, 23 June 1942',w:870,h:1200},t:['1942-06-21','1942-07-31'],dates:'21 June &ndash; 31 July 1942',dur:'41 days',place:'Mersa Matruh, then the Delta',sub:'with the Eighth Army&rsquo;s withdrawal to Alamein',unit:'No. 8 Casualty Clearing Station, S.A.M.C.',coord:[27.24,31.35],view:'desert',
+ record:[['21.6.42 &ndash; 31.7.42','Services rendered outside the Union: <i>8 C.C.S., Egypt</i>','D.D. 873'],['3 July 42','Off strength &mdash; placed on S.A.M.C. gen. list','16 F.A. P.II O 24, 13.7.42'],['3/7/42','On strength SAMC Gen list from 16 Fd Amb (FO 24/42/367 ME)','D.D. 293, Moves']],
+ story:`<p>Tobruk fell on 21 June 1942, the day his service with No. 8 Casualty Clearing Station begins. A clearing station was the next link behind the field ambulances: a tented hospital of a hundred or two hundred beds with surgical teams, where the wounded were operated on before being sent back by road, rail or hospital ship. 8 (S.A.) C.C.S. had been the static clearing station at Mersa Matruh since the autumn of 1941, with a detachment out at the Siwa oasis, and it was still there on 2 June 1942.</p><p>He can have spent only days with it in the town. As the Panzerarmee came on, Matruh was cleared of every unit that could not move: the official history records that 8 (S.A.) C.C.S. was emptied and closed, its site handed to the arriving New Zealand Division on about 24 June, and the unit held ready for the trains back to the Amiriya area outside Alexandria. Where it reopened in July the file does not say; by November it was at El Imayid station behind the Alamein line. Through July the Eighth Army held Rommel at Alamein, in what is now called the First Battle of El Alamein. The panel below sets out what the file says about how he came to be in Egypt rather than in Tobruk.</p>`,
+ conf:[REC,HIST,INF]},
+{id:'alamein',photo:{cap:'Wounded men on stretchers at an advanced dressing station during the Alamein battle, October&ndash;November 1942; a medical officer gives one a drink.',credit:'Imperial War Museums, E 18493 (No. 1 Army Film &amp; Photographic Unit). Crown copyright expired.',alt:'Wounded men on stretchers at an advanced dressing station, El Alamein, late 1942',w:800,h:790},t:['1942-08-01','1943-04-12'],dates:'1 August 1942 &ndash; 12 April 1943',dur:'8&frac12; months',place:'Abd el Qadir, west of Alexandria',sub:'Egypt',unit:'10/11 Field Ambulance (V), S.A.M.C. &middot; promoted Lance-Corporal 19 October 1942',coord:[29.67,31.0],view:'desert',
+ record:[['1-8-42','Detached to 10/11 Fd. Amb','G/L 31, 10.8.42'],['2.9.42','On Posting to 10/11 Fd Amb from SAMC GL (10/11 FA 33/42)','GL 35, 7.9.42'],['11.9.42 to 24.9.42','Granted leave + 2/- p.d. ration allce.','10/11 F.A. 35, 21.9.42'],['19.10.42','Promoted to T/L/Cpl.','FO 40/42/260 ME'],['23.7.42','Granted 2nd annual increment of 4d p.d. &hellip; Basic Rate of Pay inc. to 4/2','FO 44/42/260 ME'],['25 Jan 43','Admitted to hospital &mdash; on X2 list','FO 6/43/260 ME'],['11 Feb 43','Disch. from hosp. + rejoined unit','FO 8/43/260 ME'],['23 Jan 1943','Conduct sheet: <i>NIL</i>','Army Form B.122']],
+ story:`<p>On 1 August 1942 he was attached, and on 2 September posted, to the 10/11 Field Ambulance. The official medical history explains the double number. The 11th had gone into Operation Crusader with the 5th Brigade and was overrun at Sidi Rezegh on 23 November 1941, its dressing station captured with three hundred patients; most of its men spent a fortnight as prisoners before the New Zealanders reached them. The 10th was being rebuilt at Matruh. In June 1942, the month of Tobruk, what remained of the two was amalgamated into one unit at Mersa Matruh; on about 24 June the combined unit handed its sites in the town to the New Zealanders and moved out with the retreat. He joined it five weeks later.</p><p>The same history places the unit during his first months with it: at Abd el Qadir, on the coast just west of Alexandria, as a base medical unit of British Troops in Egypt with a hundred beds for European and three hundred for non-European troops. So when he was made a temporary lance-corporal on 19 October, four days before nearly a thousand guns opened the Second Battle of El Alamein sixty miles to the west, he was most likely on the wards at Abd el Qadir, taking in the sick and wounded sent back from the line. He had taken a fortnight&rsquo;s leave in September.</p><p>The Eighth Army broke through in early November and drove west for two thousand miles; Tripoli fell on 23 January 1943. Two days after that he went into No. 8 General Hospital with dysentery, the desert&rsquo;s commonest illness, and rejoined his unit on 11 February. His conduct sheet, opened that month, was certified <i>NIL</i>. By then the 1st South African Division had gone home to re-form as an armoured division. His unit did not go with it.</p>`,
+ conf:[REC,HIST]},
+{id:'tripoli',photo:{cap:'Valentine tanks of the Eighth Army drawn up in the main square of Tripoli, 26 January 1943, three days after the city fell.',credit:'Imperial War Museums, E 21628 (Sgt Palmer, No. 1 Army Film &amp; Photographic Unit). Crown copyright expired.',alt:'Tanks lined up in the main square of Tripoli, January 1943',w:800,h:792},t:['1943-04-13','1943-11-30'],dates:'13 April &ndash; 30 November 1943',dur:'7&frac12; months',place:'Tripolitania',sub:'Libya',unit:'10/11 Field Ambulance (V), S.A.M.C., M.E.',coord:[13.19,32.89],view:'tripoli',
+ record:[['13/4/43 &ndash; 30/11/43','Services rendered outside the Union: <i>10/11 Fld. Amb., Tripolitania</i>','D.D. 873'],['13-6-43','10/11 Fld. Ambulance (V) S.A.M.C. M.E.','D.D. 293 card 2'],['1945','I have already received the ribbons of: <i>Africa Star + 8th Army Clasp: 10/11 FLD. AMB. SAMC.</i>','D.D. 873']],
+ story:`<p>The unit moved to Tripolitania in April 1943, a month before the last Axis troops in Africa surrendered at Tunis. The fighting had moved on to Sicily and Italy; the South African medical units around Tripoli, among them the 106th General Hospital, took in casualties shipped back from the invasion of Sicily that summer. What the 10/11 Field Ambulance itself did in these months is not in the file, and has not been found in print. Somewhere in this period the unit issued him the ribbon of the Africa Star with its 8th Army clasp.</p>`,
+ conf:[REC,HIST,INF]},
+{id:'syria',photo:{cap:'Ninth Army country: a 25-pounder on a practice shoot in the mountains near Tripoli, Lebanon, June 1943. The quiet front where his unit spent 1944.',credit:'Imperial War Museums, E 25017 (Sgt Travis, No. 1 Army Film &amp; Photographic Unit). Crown copyright expired.',alt:'A field gun on a practice shoot in the mountains of Lebanon, June 1943',w:800,h:791},t:['1943-12-01','1944-07-08'],dates:'16 December 1943 &ndash; 8 July 1944',dur:'7 months',place:'Syria',sub:'location not recorded',unit:'10/11 Field Ambulance (V), under Ninth Army',coord:[36.29,33.51],view:'syria',
+ record:[['1/12/43 &ndash; 15/12/43','<i>Egypt</i>','D.D. 873'],['16/12/43 &ndash; 8/7/44','<i>Syria</i>','D.D. 873'],['1945','<i>10th/11th Field Ambulance. 8th &amp; 9th Army.</i>','D.D. 872'],['6 JULY 1944','CERTIFIED NO FURTHER ENTRIES &mdash; Adjutant &amp; Q.M., 10/11 Field Ambulance (V), SAMC, UDF, MEF','Army Form B.122']],
+ story:`<p>In December 1943 the unit passed back through Egypt and went on to Syria, where it spent the first half of 1944 under the British Ninth Army, the garrison of Syria and Lebanon. It was a quiet front: mountain training, malaria control, the hospitals of Damascus and Beirut. The file gives no town. The entry on his Details of Service, &ldquo;8th &amp; 9th Army&rdquo;, is the only trace of this posting beyond the dates, and the South African presence in the Levant in 1944 is barely written about.</p><p>His conduct sheet was closed by the unit&rsquo;s adjutant on 6 July 1944 with no entries. Two days later he left.</p>`,
+ conf:[REC,INF]},
+{id:'cairo',t:['1944-07-09','1944-08-08'],dates:'9 July &ndash; 8 August 1944',dur:'31 days',place:'Cairo, and the flight home',sub:'Egypt to the Transvaal',unit:'S.A.M.C. Transit Camp, Egypt',coord:[31.24,30.05],view:'flight',
+ record:[['9 July 44','Placed on S.A.M.C. Gen List (G.L. O/29/44)','O/24/44, 17/7/44'],['26/7/44','Letter card addressed to him: <i>L/Cpl A.M. Lapinsky, No 176073(V), S.A.M.C. Wing, Administration H.Q., U.D.F., Middle East Forces</i>','Family letter card'],['6 Aug. 44','Emplaned for Union on Home Exch.','SAMC GL O/33, 14 Aug 44'],['16-8-1944','Reason: <span class="red">EMPLANED FOR UNION ON HOME EXCHANGE</span> &mdash; Officer i/c Records, Sect. &ldquo;G&rdquo;, 2nd Echelon, U.D.F., M.E.F.','D.D. 732'],['8/8/44','On Str Base depot V/Hoogte ex ME by air (cat A)','FO 32/44/478']],
+ story:`<p>After three years and two months abroad he was sent home under what the clerks called Home Exchange, a scheme that seems to have traded long-serving men for fresh drafts. He did not sail. On 6 August 1944 he emplaned in Egypt, and on 8 August he was taken on the strength of the Union Base Depot at Voortrekkerhoogte, outside Pretoria, &ldquo;ex ME by air&rdquo;. The South African Air Force&rsquo;s transport squadrons flew Dakotas down the length of Africa in stages, by Khartoum and Kisumu; the route on the globe is that line, not one from his file. Ten days later his record card was closed in Cairo in red ink.</p><p>One piece of paper from these weeks survives with the family: an air-mail letter card dated 26 July 1944, addressed to him at the S.A.M.C. Wing of Administration Headquarters, the holding address of a man between units. It is shown <a href="#letter">below</a>.</p>`,
+ conf:[REC,INF]},
+{id:'vhoogte',t:['1944-08-08','1944-10-12'],dates:'8 August &ndash; 12 October 1944',dur:'2 months',place:'Voortrekkerhoogte and Sonderwater',sub:'Transvaal',unit:'Union Base Depot, then S.A.M.C. Training Centre',coord:[28.19,-25.77],view:'union',
+ record:[['9/8/44','Off Str Base depot V/Hoogte to SAM TC S/Water','FO 32/44/478'],['19:8:44','Next-of-Kin: <s>Father, Mr N. Lapinsky, 24 Alexandra Ave</s> WIFE (19:8:44) MRS A. LAPINSKY, 14A WAVERLEY ROAD, BLOEMFONTEIN','UO 96/44/593'],['30 NOV 1944','CERTIFIED NO ENTRIES while at SAMC T/C','M.D.C. 46']],
+ story:`<p>He was back at the medical corps&rsquo; training centre at Sonderwater within a day of landing. Eleven days after that, on 19 August 1944, the next of kin on his card was changed from his father to his wife: Ada Lapinsky, born Ada Kimmel in 1920, the daughter of Isaac and Lily Kimmel of Bloemfontein, of 14A Waverley Road. The file records no wedding, only its consequence. Whether the marriage had been planned by letter through the years away, or happened in a fortnight, is for the family to remember.</p>`,
+ conf:[REC,INF]},
+{id:'tempe',t:['1944-10-13','1945-08-24'],dates:'13 October 1944 &ndash; 24 August 1945',dur:'10 months',place:'Tempe, Bloemfontein',sub:'Orange Free State',unit:'140 Military Hospital, then the Dispersal Depot',coord:[26.19,-29.10],view:'union',
+ record:[['14-10-44','On Str 140 Mil Hosp Tempe ex M.T.C. S/Water','UO 28/44/1572'],['31-10-44','Adm to Hosp','UO 31/44/1572'],['&mdash;','<span class="red">Awarded Africa Service Medal</span>','UO 34/44/1572'],['19.12.44','Cat C','D D Med 25'],['1.1.45','Prom. from L/Cpl to T/Cpl. (Cat. C)','UO 11/45/1572'],['14.8.45','On Str Disp Depot Tempe Bloemfontein from 140 Mil Hosp','UO 57/45/1765'],['24/8/45','Discharged &mdash; C.G. &amp; A.C.F. Regulations Chapter IV, Section 30 (E). Reason: <i>Partial Demobilisation</i>. Character: <i>Very Good</i>.','D.G.D. III; D.D. 293']],
+ story:`<p>His last posting brought him home: 140 Military Hospital at Tempe, the garrison on the northern edge of Bloemfontein, a few kilometres from Waverley Road. He was admitted as a patient at the end of October and discharged from the ward just before Christmas, his medical category lowered from A1 to C, fit for base duties only. On New Year&rsquo;s Day 1945 he was promoted temporary corporal. The war in Europe ended in May, the war with Japan on 15 August; he went to the dispersal depot the day before, and was discharged on 24 August 1945 under partial demobilisation.</p><p>The forms record the practical ends of a war: thirty days&rsquo; pay in lieu of leave, a thirty-pound clothing allowance, a pension claim for the dysentery, and an application for a grant of &pound;228 to live on until he qualified as an accountant. Major Sheldon, commanding the hospital, wrote that he had performed his clerical and medical duties to his entire satisfaction. The clerk totted up his service: five years and thirty-three days.</p>`,
+ conf:[REC,HIST]},
+{id:'after',t:['1945-08-25','2009-12-19'],dates:'1945 &ndash; 2009',dur:'the years after',place:'Bloemfontein, and later Johannesburg',sub:'after the war',unit:'Civilian life &middot; Aubrey and Ada Lapinsky',coord:[28.05,-26.2],view:'union',srcTitle:'What the registers say',
+ record:[['19 Aug 1944','Next-of-kin: WIFE, Mrs A. Lapinsky, 14A Waverley Road, Bloemfontein','His record, UO 96/44/593'],['25 Oct 1961','Nathan Lapinsky, aged 77, buried in the Jewish cemetery, Bloemfontein','UCT Rootsbank cemetery index, no. 1857'],['23 Jan 1964','Lily Kimmel, aged 70, Bloemfontein','Cemetery index, no. 1804'],['18 Jan 1965','Isaac Kimmel, aged 74, Bloemfontein','Cemetery index, no. 1803'],['19 Dec 2009','Ada Lapinsky, born 1920, aged 89, buried at West Park, Johannesburg','Cemetery index, no. 58289']],
+ story:`<p>The file ends at the dispersal depot on 24 August 1945. What came after is known in outline, from the family and from the burial registers. He went back to his articles with J.C. McIntyre, the discharge papers recording the grant he asked for to live on until he qualified as an accountant. Ada, whom he had married in the fortnight after he landed, was the daughter of Isaac and Lily Kimmel, one of the Jewish families of Bloemfontein whose graves lie together in the city&rsquo;s Memorial cemetery.</p><p>His father Nathan, who had been his next of kin through the war, died in Bloemfontein in October 1961 at seventy-seven. Ada&rsquo;s parents followed within four years, Lily in January 1964 and Isaac in January 1965. At some point the family left the Free State for Johannesburg: Ada died there on 19 December 2009, aged eighty-nine, and is buried at West Park. The date and place of Aubrey&rsquo;s own death are not yet recorded here.</p>`,
+ conf:[REC,PUB,INF]}
+];
+
+/* views the globe moves between */
+const VIEWS={
+ union:{c:[27.5,-27.5],k:2.6},
+ voyage:{c:[41,-2],k:1.05},
+ desert:{c:[28,31.5],k:3.4},
+ tripoli:{c:[22,32.5],k:2.6},
+ syria:{c:[33,32.5],k:2.9},
+ flight:{c:[31,2],k:1.05}
+};
+/* route legs */
+const LEGS=[
+ {m:'road',pts:[[26.21,-29.12],[28.52,-25.67]]},
+ {m:'road',pts:[[28.52,-25.67],[30.0,-28.5],[31.03,-29.86]]},
+ {m:'sea',pts:[[31.03,-29.86],[36.5,-28.5],[41.5,-22],[43.5,-14],[42.5,-8],[46.5,-2],[51.2,10.5],[51.5,12.2],[45.03,12.78],[43.4,12.6],[41.0,16],[38.5,21],[35.5,26],[33.0,28.3],[32.55,29.97]]},
+ {m:'road',pts:[[32.55,29.97],[31.3,30.2],[29.9,31.1],[27.24,31.35],[25.17,31.57],[25.09,31.76]]},
+ {m:'road',pts:[[25.09,31.76],[25.17,31.57],[23.91,31.86],[23.4,32.2]]},
+ {m:'road',pts:[[23.4,32.2],[23.91,31.86],[25.17,31.57],[27.24,31.35],[29.67,31.0]]},
+ {m:'road',pts:[[29.67,31.0],[28.95,30.83],[25.6,31.6],[23.98,32.08],[21.0,32.5],[20.0,32.1],[18.0,30.6],[15.5,31.3],[13.19,32.89]]},
+ {m:'road',pts:[[13.19,32.89],[15.5,31.3],[20.0,32.1],[23.98,32.08],[27.24,31.35],[31.24,30.05]]},
+ {m:'road',pts:[[31.24,30.05],[32.3,30.6],[34.5,31.5],[35.2,32.8],[36.29,33.51]]},
+ {m:'road',pts:[[36.29,33.51],[35.2,32.8],[34.5,31.5],[32.3,30.6],[31.24,30.05]]},
+ {m:'air',pts:[[31.24,30.05],[32.53,15.6],[34.76,-0.09],[28.19,-25.77]]},
+ {m:'road',pts:[[28.19,-25.77],[28.52,-25.67],[26.19,-29.10]]}
+];
+
+/* ---------------- render stops ---------------- */
+const stopsEl=document.getElementById('stops');
+stopsEl.innerHTML=STOPS.map((s,i)=>`<article class="stop" id="stop-${s.id}" data-i="${i}">
+  <div class="when"><span class="eyebrow">${s.dates}</span><span class="dur">${s.dur}</span></div>
+  <h3>${s.place}</h3>
+  <p class="unit">${s.unit}</p>
+  ${s.photo?`<figure class="splash"><img src="img/places/${s.id}.jpg" alt="${s.photo.alt}" loading="lazy" width="${s.photo.w}" height="${s.photo.h}"><figcaption>${s.photo.cap}<small>${s.photo.credit}</small></figcaption></figure>`:''}
+  <div class="story">${s.story}</div>
+  <div class="record"><div class="eyebrow">${s.srcTitle||'What the file says'}</div><ol>${s.record.map(r=>`<li><span class="d">${r[0]}</span><span class="t">${r[1]}<small>${r[2]}</small></span></li>`).join('')}</ol></div>
+  <div class="conf">${s.conf.join('')}</div>
+</article>`).join('');
+
+/* ---------------- globe ---------------- */
+const box=document.getElementById('mapbox'), canvas=document.getElementById('map'), ov=document.getElementById('ov'), cap=document.getElementById('mapcap');
+const ctx=canvas.getContext('2d');
+const proj=d3.geoOrthographic().clipAngle(90).precision(.3);
+const path=d3.geoPath(proj,ctx);
+const grat=d3.geoGraticule().step([10,10])();
+const sphere={type:'Sphere'};
+let land=null, W=0, H=0, dpr=1;
+let cur={lon:27.5,lat:-27.5,k:2.6}, anim=null, active=-1;
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const pins=STOPS.map((s,i)=>{
+  const b=document.createElement('button'); b.className='pin'; b.type='button'; b.setAttribute('aria-label',s.place+', '+s.dates.replace(/&ndash;/g,'to'));
+  b.innerHTML='<i></i>'; b.addEventListener('click',()=>{document.getElementById('stop-'+s.id).scrollIntoView({behavior:reduced?'auto':'smooth',block:'center'})});
+  const l=document.createElement('span'); l.className='lbl'; l.textContent=s.place.replace(/ and .*$/,''); l.setAttribute('aria-hidden','true');
+  ov.appendChild(b); ov.appendChild(l); return {b,l};
+});
+function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
+function colors(){return {paper:css('--paper'),land:css('--map-land'),border:css('--map-border'),grat:css('--map-grat'),sea:css('--sea'),road:css('--road'),air:css('--air'),stamp:css('--stamp'),ink3:css('--ink-3')}}
+function size(){
+  const r=box.getBoundingClientRect(); W=Math.max(10,r.width); H=Math.max(10,r.height); dpr=Math.min(2.5,window.devicePixelRatio||1);
+  canvas.width=Math.round(W*dpr); canvas.height=Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0); draw();
+}
+function applyProj(v){ proj.rotate([-v.lon,-v.lat]).scale((Math.min(W,H)/2-2)*v.k).translate([W/2,H/2]); }
+function draw(){
+  const C=colors(); applyProj(cur);
+  ctx.clearRect(0,0,W,H);
+  ctx.beginPath(); path(sphere); ctx.fillStyle=C.paper; ctx.fill();
+  ctx.beginPath(); path(grat); ctx.strokeStyle=C.grat; ctx.lineWidth=.8; ctx.stroke();
+  if(land){
+    ctx.beginPath(); path(land); ctx.fillStyle=C.land; ctx.fill();
+    ctx.strokeStyle=C.border; ctx.lineWidth=.7; ctx.stroke();
+  }
+  ctx.beginPath(); path(sphere); ctx.strokeStyle=C.border; ctx.lineWidth=1.2; ctx.stroke();
+  ctx.lineCap='round'; ctx.lineJoin='round';
+  LEGS.forEach(L=>{
+    ctx.beginPath(); path({type:'LineString',coordinates:L.pts});
+    ctx.lineWidth=2.4;
+    if(L.m==='sea'){ctx.strokeStyle=C.sea;ctx.setLineDash([]);}
+    else if(L.m==='air'){ctx.strokeStyle=C.air;ctx.setLineDash([7,5]);}
+    else {ctx.strokeStyle=C.road;ctx.setLineDash([2,4]);}
+    ctx.stroke(); ctx.setLineDash([]);
+  });
+  // pins
+  const centre=[cur.lon,cur.lat];
+  const view=active>=0?STOPS[active].view:null;
+  const R=Math.min(W,H)/2-6;
+  const P=STOPS.map(s=>{const p=proj(s.coord); return (p&&d3.geoDistance(s.coord,centre)<Math.PI/2-0.03&&Math.hypot(p[0]-W/2,p[1]-H/2)<R)?p:null;});
+  // the active stop's label is placed first and wins any collision
+  const order=STOPS.map((_,i)=>i).sort((a,b)=>(a===active?-1:b===active?1:a-b));
+  const shown=[];
+  order.forEach(i=>{
+    const s=STOPS[i], p=P[i], {b,l}=pins[i];
+    if(!p){b.hidden=true;l.hidden=true;return;}
+    b.hidden=false; b.style.transform=`translate(${p[0]}px,${p[1]}px)`; b.classList.toggle('active',i===active);
+    let ok=(i===active)||(s.view===view);
+    if(ok&&i!==active) ok=!shown.some(q=>Math.abs(q[1]-p[1])<18&&Math.abs(q[0]-p[0])<150);
+    if(ok) shown.push(p);
+    l.hidden=!ok; if(ok){ l.style.left=p[0]+'px'; l.style.top=p[1]+'px'; l.classList.toggle('left',p[0]>W*0.62); l.classList.toggle('sub',i!==active); }
+  });
+}
+function goTo(v,immediate){
+  if(anim) cancelAnimationFrame(anim);
+  const from={...cur}, to={lon:v.c[0],lat:v.c[1],k:v.k};
+  if(immediate||reduced){cur=to;draw();return;}
+  const ip=d3.interpolate([from.lon,from.lat,from.k],[to.lon,to.lat,to.k]); const t0=performance.now(), D=1100;
+  const step=now=>{const t=Math.min(1,(now-t0)/D), e=d3.easeCubicInOut(t); const [lon,lat,k]=ip(e); cur={lon,lat,k}; draw(); if(t<1) anim=requestAnimationFrame(step); else anim=null;};
+  anim=requestAnimationFrame(step);
+}
+/* ---------------- timeline under the globe ---------------- */
+const tlSvg=document.getElementById('tl');
+const EVENTS=[
+ {d:'1940-06-10',l:'Italy enters the war'},
+ {d:'1941-11-18',l:'Operation Crusader opens'},
+ {d:'1941-11-23',l:'5th Brigade destroyed at Sidi Rezegh; 11 Fd Amb overrun',u:1},
+ {d:'1941-12-14',l:'3rd Brigade’s first attack on Bardia, 14–17 Dec',u:1},
+ {d:'1942-01-02',l:'Bardia falls to the 2nd SA Division',u:1},
+ {d:'1942-01-17',l:'Sollum and Halfaya surrender',u:1},
+ {d:'1942-01-21',l:'Rommel’s counter-offensive begins'},
+ {d:'1942-03-22',l:'3rd Brigade and 16 Fd Amb to El Adem, 1st Division',u:1},
+ {d:'1942-05-26',l:'Battle of Gazala opens'},
+ {d:'1942-06-21',l:'Tobruk surrenders'},
+ {d:'1942-06-24',l:'8 CCS and 10/11 Fd Amb leave Matruh',u:1},
+ {d:'1942-07-01',l:'First Battle of El Alamein, 1–27 July'},
+ {d:'1942-10-23',l:'Second Battle of El Alamein opens'},
+ {d:'1943-01-01',l:'1st SA Division disbanded',u:1},
+ {d:'1943-01-23',l:'Eighth Army enters Tripoli'},
+ {d:'1943-04-30',l:'6th SA Armoured Division lands in Egypt',u:1},
+ {d:'1943-05-13',l:'Axis forces in Africa surrender'},
+ {d:'1943-07-10',l:'Sicily invaded'},
+ {d:'1943-09-03',l:'Italy invaded'},
+ {d:'1944-04-15',l:'6th SA Armoured Division sails for Italy (April)',u:1},
+ {d:'1944-06-06',l:'D-Day'},
+ {d:'1945-05-08',l:'VE Day'},
+ {d:'1945-08-15',l:'VJ Day'}
+];
+const fmtD=d3.timeFormat('%-d %b %Y');
+const TL={x0:28,x1:540,y:44,t0:new Date('1939-06-01'),t1:new Date('1945-09-30')};
+const tlx=d3.scaleTime().domain([TL.t0,TL.t1]).range([TL.x0,TL.x1]);
+function buildTimeline(){
+  let h='';
+  h+=`<line class="axis" x1="${TL.x0}" y1="${TL.y}" x2="${TL.x1}" y2="${TL.y}"/>`;
+  for(let y=1940;y<=1945;y++){const x=tlx(new Date(y+'-01-01')); h+=`<line class="tick" x1="${x}" y1="${TL.y-5}" x2="${x}" y2="${TL.y+5}"/><text class="yr" x="${x}" y="${TL.y+20}" text-anchor="middle">${y}</text>`;}
+  // axis break and the post-war point
+  const bx=TL.x1+12; h+=`<line class="brk" x1="${bx-3}" y1="${TL.y-7}" x2="${bx+3}" y2="${TL.y+7}"/><line class="brk" x1="${bx+3}" y1="${TL.y-7}" x2="${bx+9}" y2="${TL.y+7}"/><line class="axis" x1="${bx+12}" y1="${TL.y}" x2="${bx+40}" y2="${TL.y}"/><text class="yr" x="${bx+32}" y="${TL.y+20}" text-anchor="middle">2009</text>`;
+  // spans (drawn first so points sit on top)
+  STOPS.forEach((s,i)=>{ if(s.id==='after') return; const a=tlx(new Date(s.t[0])), b=Math.max(tlx(new Date(s.t[1])),a+1.5); h+=`<line class="span" data-i="${i}" x1="${a}" y1="${TL.y}" x2="${b}" y2="${TL.y}"/>`; });
+  STOPS.forEach((s,i)=>{ const x=s.id==='after'?bx+32:tlx(new Date(s.t[0])); h+=`<circle class="pt" data-i="${i}" cx="${x}" cy="${TL.y}" r="4.5"><title>${s.place.replace(/&[a-z]+;/g,' ')}, ${s.dates.replace(/&ndash;/g,'to').replace(/&frac12;/g,'½')}</title></circle>`; });
+  EVENTS.forEach((e,j)=>{ const x=tlx(new Date(e.d)); if(x<TL.x0||x>TL.x1) return; const y=TL.y-9; h+=`<path class="ev${e.u?' u':''}" data-j="${j}" d="M${(x-3.5).toFixed(1)} ${y-6}h7l-3.5 6z"><title>${e.l} — ${fmtD(new Date(e.d))}</title></path>`; });
+  h+=`<text class="cap" id="tlcap" x="${TL.x0}" y="14"></text><text class="evcap" id="tlev" x="${TL.x0}" y="27"></text>`;
+  tlSvg.innerHTML=h;
+  tlSvg.querySelectorAll('.ev').forEach(pth=>{ const show=()=>{ const e=EVENTS[+pth.dataset.j], ev=document.getElementById('tlev'), x=tlx(new Date(e.d)); ev.textContent=e.l+' · '+fmtD(new Date(e.d)); ev.setAttribute('x',Math.min(Math.max(x,TL.x0+150),TL.x1-150)); ev.setAttribute('text-anchor','middle'); }; pth.addEventListener('mouseenter',show); pth.addEventListener('click',show); pth.addEventListener('mouseleave',()=>{document.getElementById('tlev').textContent='';}); });
+  tlSvg.querySelectorAll('.pt').forEach(c=>c.addEventListener('click',()=>{const s=STOPS[+c.dataset.i]; document.getElementById('stop-'+s.id).scrollIntoView({behavior:reduced?'auto':'smooth',block:'center'});}));
+}
+function updateTimeline(i){
+  tlSvg.querySelectorAll('.pt,.span').forEach(el=>el.classList.toggle('on',+el.dataset.i===i));
+  const s=STOPS[i]; const cap=document.getElementById('tlcap'); if(!cap) return;
+  const a=s.id==='after'?TL.x1+44:tlx(new Date(s.t[0]));
+  cap.textContent=s.dur.replace(/&frac12;/g,'½'); cap.setAttribute('x',Math.min(Math.max(a,TL.x0+30),TL.x1+40)); cap.setAttribute('text-anchor',a>TL.x1-60?'end':'middle');
+  const pt=tlSvg.querySelector(`.pt[data-i="${i}"]`); if(pt) pt.setAttribute('r',6.5); tlSvg.querySelectorAll('.pt').forEach(c=>{if(+c.dataset.i!==i)c.setAttribute('r',4.5);});
+}
+buildTimeline();
+
+function setActive(i,immediate){
+  if(i===active) return; const prevView=active>=0?STOPS[active].view:null; active=i;
+  const s=STOPS[i]; cap.textContent=s.dates.replace(/&ndash;/g,'–').replace(/&frac12;/g,'½')+' · '+s.place;
+  if(s.view!==prevView) goTo(VIEWS[s.view],immediate); else draw();
+  updateTimeline(i);
+}
+land=window.REGION||null;
+new ResizeObserver(size).observe(box); size();
+setActive(0,true);
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+/* scroll-driven activation: the stop nearest the middle of the viewport */
+const stopEls=[...document.querySelectorAll('.stop')];
+let ticking=false;
+function pick(){
+  ticking=false; const mid=window.innerHeight*0.45; let best=-1,bd=Infinity;
+  stopEls.forEach((el,i)=>{const r=el.getBoundingClientRect(); const d=r.top>mid?r.top-mid:(r.bottom<mid?mid-r.bottom:0); if(d<bd){bd=d;best=i;}});
+  if(best>=0) setActive(best);
+}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(pick);}},{passive:true});
+pick();
+
+/* ---------------- documents ---------------- */
+const GROUPS=[
+ {t:'Attestation, July 1940',d:'The form he signed at Sonderwater: fourteen questions, the oath, and his description on enlistment.',ids:['P13','P14']},
+ {t:'Record cards, Middle East',d:'D.D. 732 cards kept by 2nd Echelon in Cairo: one buff, one white, each with a Record of Service on the back. Closed in red ink when he flew home.',ids:['P02','P03','P20','P21']},
+ {t:'War Records cards, Pretoria',d:'D.D. 293 cards kept by the Adjutant-General’s War Records office in Pretoria: postings, moves, promotions, hospital record, and the medal entitlement.',ids:['S01','S02','S03','S04','S05','S06']},
+ {t:'Conduct sheets',d:'Three copies, from the field ambulance, the training centre and the hospital. All certified with no entries.',ids:['P04','P12','P11']},
+ {t:'Discharge, August 1945',d:'The Record of Volunteer’s Service in two copies, the Particulars of Discharge in two copies, and his OC’s Details of Service.',ids:['P05','P06','P07','P08','P09','P15','P10']},
+ {t:'Medals, 1945–1957',d:'The file cover with its entitlement stamp, his own application for campaign medals, and the War Records office’s verification and ribbon letter.',ids:['P01','P16','P17','P18','P19']},
+ {t:'From the family',d:'Not part of the Pretoria file: the framed medal group with his portrait, the letter card of July 1944, and the slip that came with the medals in 1957.',ids:['F03','F01','F02']}
+];
+const SHORT={P01:'File cover',P02:'D.D. 732 · card (front)',P03:'D.D. 732 · record of service',P04:'Army Form B.122 · conduct sheet',P05:'DGD 15(A) · p.1',P06:'DGD 15(A) · p.2',P07:'DGD 15(A) · duplicate p.1',P08:'DGD 15(A) · duplicate p.2',P09:'D.G.D. III · particulars of discharge',P10:'D.D. 872 · details of service',P11:'M.D.C. 46 · conduct sheet (Union)',P12:'M.D.C. 46 · conduct sheet (M.E.)',P13:'D.D. 88B · attestation',P14:'D.D. 88B · oath and description',P15:'D.G.D. III · duplicate',P16:'D.D. 873 · medal application',P17:'D.D. 873 · reverse',P18:'Annexure · verification',P19:'Annexure · ribbon letter',P20:'D.D. 732 · card 2 (front)',P21:'D.D. 732 · card 2 record of service',S01:'D.D. 293 · card 1 front',S02:'D.D. 293 · card 1 inside',S03:'D.D. 293 · card 2 front',S04:'D.D. 293 · card 2 record 1942–45',S05:'D.D. 293 · discharge card',S06:'D.D. 293 · record 1940–41',F01:'Letter card · 26 July 1944',F02:'Medal transmittal slip · 1957',F03:'Framed medal group with portrait'};
+const ORDER=GROUPS.flatMap(g=>g.ids);
+let DOCS={};
+document.getElementById('docgroups').innerHTML=GROUPS.map(g=>`<div class="docgroup"><h3>${g.t}</h3><p class="muted small">${g.d}</p><div class="thumbs">${g.ids.map(id=>`<button class="thumb" type="button" data-id="${id}" aria-label="Open ${SHORT[id]}"><span class="fr"><img src="docs/${id}.jpg" loading="lazy" alt=""></span><span class="cap"><b>${id.replace(/^([PSF])0?/, '$1-')}</b>${SHORT[id]}</span></button>`).join('')}</div></div>`).join('');
+const dlg=document.getElementById('docdlg'), dimg=document.getElementById('dimg'), dtx=document.getElementById('dtx'), dttl=document.getElementById('dttl'), dview=document.getElementById('dview');
+let curDoc=0;
+function showDoc(i){
+  curDoc=(i+ORDER.length)%ORDER.length; const id=ORDER[curDoc]; const d=DOCS[id];
+  dimg.src='docs/'+id+'.jpg'; dimg.alt='Scan of '+SHORT[id]; dview.classList.remove('zoomed'); dview.scrollTo(0,0);
+  dttl.innerHTML=`${(d&&d.title)||SHORT[id]} <small>${id.replace(/^([PSF])0?/, '$1-')} · ${curDoc+1} of ${ORDER.length}</small>`;
+  dtx.innerHTML=(d?d.html:'<p class="muted">Transcription loading…</p>')+'<p class="note">Bold typewriter text is handwritten or typed-in by the clerks; ordinary text is the printed form. [?] marks an uncertain reading; [sic] a clerk’s error kept as written.</p>';
+  dtx.parentElement.scrollTo(0,0);
+}
+document.getElementById('docgroups').addEventListener('click',e=>{const b=e.target.closest('.thumb'); if(!b) return; showDoc(ORDER.indexOf(b.dataset.id)); dlg.showModal();});
+document.getElementById('dprev').onclick=()=>showDoc(curDoc-1);
+document.getElementById('dnext').onclick=()=>showDoc(curDoc+1);
+document.getElementById('dclose').onclick=()=>dlg.close();
+document.getElementById('dzoom').onclick=()=>dview.classList.toggle('zoomed');
+dview.addEventListener('click',()=>dview.classList.toggle('zoomed'));
+dlg.addEventListener('click',e=>{if(e.target===dlg) dlg.close();});
+dlg.addEventListener('keydown',e=>{if(e.key==='ArrowLeft') showDoc(curDoc-1); if(e.key==='ArrowRight') showDoc(curDoc+1);});
+(function(j){j.docs.forEach(d=>DOCS[d.id]=d); renderGloss(j.glossary);})(window.DOCSDATA||{docs:[],glossary:[]});
+
+/* ---------------- glossary ---------------- */
+function renderGloss(g){
+  document.getElementById('gloss').innerHTML='<dl>'+g.map(x=>`<div><dt>${x.a}${x.conf?'<sup>†</sup>':''}</dt><dd>${x.e}</dd></div>`).join('')+'</dl>';
+}
+})();
+</script>
+</body>
+</html>
